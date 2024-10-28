@@ -15,11 +15,11 @@ body {
 }
 
 #navlinks a{
-  font-size: 12px;
+  font-size: 18px;
 }
 
 #navlinks .nav-link{
-  padding: 5px  20px;
+  padding: 2px  20px;
   border-radius: 15px;
 }
 
