@@ -6,23 +6,25 @@ import ProfilePic from "./ProfilePic";
 
 export default function Navigation() {
   return (
-    <Navbar fixed="top" expand="lg" className="bg-body-tertiary">
+    <Navbar id="nav-bar" fixed="top" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="/">
           <ProfilePic />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse
-          id="responsive-navbar-nav"
-          style={{ justifyContent: "end" }}
-        >
-          <Nav>
+        <Nav id="navlinks" variant="pills" className="justify-content-end">
+          <Nav.Item>
             <Nav.Link href="#about">about</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
             <Nav.Link href="#skills">skills</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
             <Nav.Link href="#projects">projects</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
             <Nav.Link href="#sayhi">say hi</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+          </Nav.Item>
+        </Nav>
       </Container>
     </Navbar>
   );
