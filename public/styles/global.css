@@ -33,7 +33,7 @@ body {
 
 #myname{
   width: 100%;
-  height: 900px;
+  height: 100vh;
   display: flex;;
   justify-content: center;
   align-items: center;
@@ -43,4 +43,39 @@ body {
   color:black;
   font-size: 10vw;
   font-weight: 100;
+}
+
+#about{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+#skills{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+#projects{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sayhi{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
 }

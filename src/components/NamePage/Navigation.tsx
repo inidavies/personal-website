@@ -6,7 +6,7 @@ import ProfilePic from "./ProfilePic";
 
 export default function Navigation() {
   return (
-    <Navbar id="nav-bar" className="bg-body-tertiary">
+    <Navbar id="nav-bar" fixed="top" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="/">
           <ProfilePic />
