@@ -12,7 +12,6 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
-  background-color: #FDE8F7 !important
 }
 #nav-bar{
   background-color: #fde8f700 !important;
@@ -38,9 +37,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.alternate-page{
-  background-color: #FFFFFF;
+.mainColor{
+  background-color: #FDE8F7;
+}
+.alternateColor{
+  background-color: white;
 }
 
 #myname h1{
