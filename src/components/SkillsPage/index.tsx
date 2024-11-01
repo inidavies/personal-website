@@ -1,7 +1,7 @@
 function SkillsPage() {
   return (
-    <div id="skills" className="mypage alternate-page">
-      <div>
+    <div id="skills" className="mypage alternate-page aboutAndSkills">
+      <div id="skillSummary">
         <h2>my tech stack</h2>
         <p>
           I am a BSc in Computer Science graduate from University of North
@@ -10,7 +10,7 @@ function SkillsPage() {
           of North Texas.
         </p>
       </div>
-      <div>
+      <div id="skillList">
         {/*make this a iteration on a list */}
         <ul>
           <li>
