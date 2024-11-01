@@ -12,7 +12,14 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
-  background-color: #FDE8F7 !important
+  background-color: #FDE8F7 !important;
+}
+.homePage{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
 }
 #nav-bar{
   background-color: #FDE8F7 !important;
@@ -30,17 +37,25 @@ body {
   color: white;
   background-color: rgba(0, 0, 0, 0.986);
 }
-.mypage{
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
+
+.myPage{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 }
 
-.alternate-page{
-  background-color: #FFFFFF;
+.fullPage{
+  width: 100%;
+  height: 100vh;
+}
+
+.cardPage{
+  width:90%;
+  height: 90vh;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 60px;
 }
 
 #myname h1{

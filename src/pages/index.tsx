@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
   return (
-    <>
+    <div className="homePage">
       <Head>
         <title>Ini Davies</title>
       </Head>
@@ -19,6 +19,6 @@ export default function Home() {
       <SkillsPage />
       <ProjectsPage />
       <SayHiPage />
-    </>
+    </div>
   );
 }

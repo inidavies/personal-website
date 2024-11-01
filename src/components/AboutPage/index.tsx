@@ -1,6 +1,6 @@
 function AboutPage() {
   return (
-    <div id="about" className="mypage alternate-page">
+    <div id="about" className="myPage cardPage">
       <h1>About</h1>
     </div>
   );
