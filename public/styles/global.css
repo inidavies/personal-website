@@ -92,13 +92,25 @@ body {
 }
 
 #skillList{
-  width: 30%;
+  width: auto;
   display: flex;
   justify-content: center;
-  flex-flow: column nowrap; 
+  flex-flow: column wrap; 
   align-items: center;
   padding: 20px;
   margin: 50px;
+}
+
+#skillList ul{
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: repeat(9, min-content);
+  grid-auto-flow: column;
+  justify-content: center;
+}
+
+.item{
+  margin-right: 25px;
 }
 
 @media screen and (max-width: 800px){
@@ -130,8 +142,17 @@ body {
   }
   
   #skillList{
+    display: block;
     width: 100%;
     margin: auto;
     margin-top: 20px;
+  }
+
+  #skillList ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-auto-flow: column;
+    justify-content: center;
   }
 }

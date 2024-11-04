@@ -13,31 +13,31 @@ function SkillsPage() {
       <div id="skillList">
         {/*make this a iteration on a list */}
         <ul>
-          <li>
+          <li className="item">
             <h2>Python</h2>
           </li>
-          <li>
+          <li className="item">
             <h2>HTML</h2>
           </li>
-          <li>
+          <li className="item">
             <h2>TailwindCSS</h2>
           </li>
-          <li>
+          <li className="item">
             <h2>JavaScript</h2>
           </li>
-          <li>
+          <li className="item">
             <h2>React JS</h2>
           </li>
-          <li>
+          <li className="item">
             <h2>React Native</h2>
           </li>
-          <li>
+          <li className="item">
             <h2>Flask</h2>
           </li>
-          <li>
+          <li className="item">
             <h2>Jinja</h2>
           </li>
-          <li>
+          <li className="item">
             <h2>Figma</h2>
           </li>
         </ul>
