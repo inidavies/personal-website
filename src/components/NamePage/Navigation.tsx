@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
     <Navbar id="nav-bar" fixed="top" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="#myname">
           <ProfilePic />
         </Navbar.Brand>
         <Nav id="navlinks" variant="pills" className="justify-content-end">
