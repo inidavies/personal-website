@@ -71,11 +71,34 @@ body {
 #aboutText{
   width:40vw;
   display: flex;
-  padding: 20px;
-  margin: 50px;
   justify-content: center;
   flex-flow: column nowrap;
   overflow: hidden;
+  padding: 20px;
+  margin: 50px;
+}
+
+#skills{
+
+}
+
+#skillSummary{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  padding: 20px;
+  margin: 50px;
+}
+
+#skillList{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap; 
+  align-items: center;
+  padding: 20px;
+  margin: 50px;
 }
 
 @media screen and (max-width: 800px){
@@ -90,6 +113,23 @@ body {
   }
 
   #aboutText{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  #skills{
+    display: block;
+    height: auto;
+  }
+
+  #skillSummary{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  #skillList{
     width: 100%;
     margin: auto;
     margin-top: 20px;
