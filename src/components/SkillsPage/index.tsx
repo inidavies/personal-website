@@ -2,7 +2,7 @@ function SkillsPage() {
   return (
     <div id="skills" className="mypage alternate-page aboutAndSkills">
       <div id="skillSummary">
-        <h2>my tech stack</h2>
+        <h2>my tech stack.</h2>
         <p>
           I am a BSc in Computer Science graduate from University of North
           Texas. I am a BSc in Computer Science graduate from University of
