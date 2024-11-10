@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 function AboutPage() {
   return (
     <div id="about" className="mypage alternate-page aboutAndSkills">
       <div id="aboutPicContainer">
-        <Image src="/images/aboutPic.jpg" id="aboutPic" alt="a picture of me" />
+        <img src="/images/aboutPic.jpg" id="aboutPic" alt="a picture of me" />
       </div>
       <div id="aboutText">
         <h2>a little about me.</h2>
