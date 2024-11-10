@@ -3,7 +3,7 @@ import Location from "./location";
 import React from "react";
 import { useEffect, useState } from "react";
 
-export default function contactLinks() {
+export default function ContactLinks() {
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
