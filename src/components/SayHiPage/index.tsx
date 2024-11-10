@@ -1,7 +1,11 @@
+import ContactForm from "./contactForm";
+import ContactLinks from "./contactLinks";
+
 function SayHiPage() {
   return (
-    <div id="sayhi" className="mypage alternate-page">
-      <h1>Say Hi</h1>
+    <div id="sayHi" className="mypage alternate-page">
+      <ContactForm />
+      <ContactLinks />
     </div>
   );
 }

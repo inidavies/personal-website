@@ -22,7 +22,7 @@ export default function Navigation() {
             <Nav.Link href="#projects">projects</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="#sayhi">say hi</Nav.Link>
+            <Nav.Link href="#sayHi">say hi</Nav.Link>
           </Nav.Item>
         </Nav>
       </Container>
