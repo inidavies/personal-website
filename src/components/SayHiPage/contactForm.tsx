@@ -1,8 +1,11 @@
 export default function ContactForm() {
+  const handleSubmit = () => {
+    alert("Submitted");
+  };
   return (
     <div id="contactLeft">
       <h2>contact me.</h2>
-      <form className="contactForm">
+      <form onSubmit={handleSubmit} className="contactForm">
         <div className="form-row row-top">
           <input className="forminput" placeholder="your name"></input>
           <input className="forminput" placeholder="your email"></input>
