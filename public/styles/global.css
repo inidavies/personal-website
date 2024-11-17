@@ -91,7 +91,7 @@ h2{
 }
 
 #skills{
-
+  height: 70vh;
 }
 
 #skillSummary{
@@ -128,6 +128,7 @@ h2{
 }
 
 #sayHi{
+  height: auto;
   flex-direction: row;
   padding: 20vh 2vh;
 }
