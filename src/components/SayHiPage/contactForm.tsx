@@ -4,7 +4,7 @@ export default function ContactForm() {
   };
   return (
     <div id="contactLeft">
-      <h2>contact me.</h2>
+      <h2>say hi.</h2>
       <form onSubmit={handleSubmit} className="contactForm">
         <div className="form-row row-top">
           <input className="forminput" placeholder="your name"></input>
