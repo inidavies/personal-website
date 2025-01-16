@@ -1,5 +1,7 @@
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { use, useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 const PUBLIC_KEY = process.env.PUBLIC_KEY;
 const NAME = process.env.NAME;
@@ -8,6 +10,26 @@ export default function ContactForm() {
   const [senderName, setSenderName] = useState("");
   const [senderEmail, setSenderEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
+  const [sentStatus, setSentStatus] = useState(false);
+
+  function resetFields() {
+    if (sentStatus) {
+      // reset all fields if the message was sent
+      setSenderName("");
+      setSenderEmail("");
+      setMessage("");
+    }
+  }
+
+  const handleClose = () => {
+    setShowAlert(false);
+    resetFields();
+    if (!showAlert) {
+      // so that the falsy message does not show while the dialog is visible
+      setSentStatus(false);
+    }
+  };
 
   const handleSubmit = (event: any) => {
     // prevents default behavior like refreshing the whole page
@@ -41,20 +63,15 @@ export default function ContactForm() {
             response.status,
             response.text
           );
+          setSentStatus(true);
+          setShowAlert(true);
         },
         (error) => {
           console.log("failed to send email.", error);
+          setSentStatus(false);
+          setShowAlert(true);
         }
       );
-
-      alert("Submitted");
-
-      // reset all fields
-      setSenderName("");
-      setSenderEmail("");
-      setMessage("");
-    } else {
-      alert("Not Submitted!");
     }
   };
   return (
@@ -90,6 +107,26 @@ export default function ContactForm() {
           Send Message
         </button>
       </form>
+
+      <Modal id="submittedPopup" show={showAlert}>
+        {sentStatus ? (
+          <>
+            <Modal.Header>
+              <p>Message Sent</p>
+            </Modal.Header>
+            <Modal.Body>{message}</Modal.Body>
+          </>
+        ) : (
+          <Modal.Header>
+            <p>Message Not Sent</p>
+          </Modal.Header>
+        )}
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            OK
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
