@@ -42,8 +42,17 @@ h2{
   color: #FDE8F7;
   background-color: rgba(0, 0, 0, 0.986);
 }
-
-
 .alternate-page{
   background-color: #FFFFFF;
 }
+
+.mypage{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+

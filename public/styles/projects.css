@@ -1,3 +1,16 @@
+#projects{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.projectStack{
+  height: 100px;
+  overflow: hidden;
+}
+.clicked{
+  height: 100%;
+}
 
 @media screen and (max-width: 800px){
 
