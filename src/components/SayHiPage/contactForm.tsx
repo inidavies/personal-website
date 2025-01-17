@@ -80,6 +80,8 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="contactForm">
         <div className="form-row row-top">
           <input
+            type="text"
+            minLength={3}
             className="forminput"
             placeholder="your name"
             value={senderName}
@@ -87,6 +89,7 @@ export default function ContactForm() {
             required
           ></input>
           <input
+            type="email"
             className="forminput"
             placeholder="your email"
             value={senderEmail}
@@ -97,6 +100,7 @@ export default function ContactForm() {
         <div className="form-row row-bottom">
           <label className="messageLabel">your message</label>
           <textarea
+            minLength={3}
             className="forminput"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
