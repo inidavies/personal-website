@@ -5,7 +5,6 @@ import { SkillsPage } from "../components/SkillsPage";
 import { AboutPage } from "../components/AboutPage";
 import { ProjectsPage } from "../components/ProjectsPage";
 import { SayHiPage } from "../components/SayHiPage";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
   return (
@@ -22,3 +21,4 @@ export default function Home() {
     </>
   );
 }
+export { Home };

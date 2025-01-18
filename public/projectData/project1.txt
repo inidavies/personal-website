@@ -1,35 +1,4 @@
-import React, { useState } from "react";
-import Collapse from "react-bootstrap/Collapse";
-
-function ProjectsPage() {
-  const [isClicked, setIsClicked] = useState("");
-
-  const mArry = ["1", "2", "3", "4"];
-  const checkEven = (num: number) => {
-    return num % 2 == 0;
-  };
-
-  const checkIsFirst = (num: number) => {
-    return num == 1;
-  };
-
-  const RenderProjects = () => {
-    return mArry.map((item: any) => {
-      console.log(checkEven(item));
-      return (
-        <a
-          className={`projectCard 
-            ${checkEven(item) ? "evenproject" : "oddproject"}
-            ${checkIsFirst(item) ? "" : "layeredcards"}`}
-          id={`project${item}`}
-          href={`#projects`}
-        >
-          <div className="projectHeading">
-            <h1>GROCERY TRACKER WEBSITE</h1>
-            <h2> Web Design</h2>
-          </div>
-          <p>
-            {item} The standard Lorem Ipsum passage, used since the 1500s "Lorem
+The standard Lorem Ipsum passage, used since the 1500s "Lorem
             ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -230,16 +199,3 @@ function ProjectsPage() {
             man therefore always holds in these matters to this principle of
             selection: he rejects pleasures to secure other greater pleasures,
             or else he endures pains to avoid worse pains."
-          </p>
-        </a>
-      );
-    });
-  };
-
-  return (
-    <div id="projects" className="mypage">
-      {RenderProjects()}
-    </div>
-  );
-}
-export { ProjectsPage };

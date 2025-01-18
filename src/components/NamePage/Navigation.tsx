@@ -8,21 +8,21 @@ export default function Navigation() {
   return (
     <Navbar id="nav-bar" fixed="top" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#myname">
+        <Navbar.Brand href="/#myname">
           <ProfilePic />
         </Navbar.Brand>
         <Nav id="navlinks" variant="pills" className="justify-content-end">
           <Nav.Item>
-            <Nav.Link href="#about">about</Nav.Link>
+            <Nav.Link href="/#about">about</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="#skills">skills</Nav.Link>
+            <Nav.Link href="/#skills">skills</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="#projects">projects</Nav.Link>
+            <Nav.Link href="/#projects">projects</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="#sayHi">say hi</Nav.Link>
+            <Nav.Link href="/#sayHi">say hi</Nav.Link>
           </Nav.Item>
         </Nav>
       </Container>
