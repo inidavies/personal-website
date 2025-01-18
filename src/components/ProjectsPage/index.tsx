@@ -1,22 +1,27 @@
 import React, { useState } from "react";
+import Collapse from "react-bootstrap/Collapse";
+
 function ProjectsPage() {
-  const [isClicked, setIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState("");
 
   const mArry = ["1", "2", "3"];
+
+  function handleOnClick(item: string) {
+    const project = document.getElementById(`project${item}`);
+    console.log(project);
+    if (project) {
+      project.classList.toggle("active");
+    }
+  }
 
   const RenderProjects = () => {
     return mArry.map((item: any) => {
       return (
-        <div
+        <a
+          className="projectCard"
           id={`project${item}`}
-          className="projectStack"
-          onClick={() => {
-            setIsClicked(!isClicked);
-            const project = document.getElementById(`project${item}`);
-            if (project) {
-              project.style.height = isClicked ? "100%" : "100px";
-            }
-          }}
+
+          //onClick={() => handleOnClick(item)}
         >
           <p>
             {item} The standard Lorem Ipsum passage, used since the 1500s "Lorem
@@ -87,7 +92,7 @@ function ProjectsPage() {
             selection: he rejects pleasures to secure other greater pleasures,
             or else he endures pains to avoid worse pains."
           </p>
-        </div>
+        </a>
       );
     });
   };
