@@ -22,11 +22,28 @@ function ProjectsPage() {
             ${checkEven(item) ? "evenproject" : "oddproject"}
             ${checkIsFirst(item) ? "" : "layeredcards"}`}
           id={`project${item}`}
-          href={`#projects`}
+          href={`#/project${item}`}
         >
           <div className="projectHeading">
-            <h1>GROCERY TRACKER WEBSITE</h1>
-            <h2> Web Design</h2>
+            <div className={"leftheading"}>
+              <h1>GROCERY TRACKER WEBSITE</h1>
+              <h4>
+                Web Design &#x2022; Full-Stack Development &#x2022; UX Design
+              </h4>
+            </div>
+            <div className={"rightheading"}>
+              <div className={"year"}>
+                <h4>2024</h4>
+              </div>
+              <div className={"techstack"}>
+                <h4>HTML &#x2022;</h4>
+                <h4>CSS &#x2022;</h4>
+                <h4>FLASK &#x2022;</h4>
+                <h4>PYTHON &#x2022;</h4>
+                <h4>JINJA &#x2022;</h4>
+                <h4>FIGMA</h4>
+              </div>
+            </div>
           </div>
           <p>
             {item} The standard Lorem Ipsum passage, used since the 1500s "Lorem
