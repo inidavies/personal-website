@@ -26,7 +26,7 @@
       /** i was stumped about why the transition was so abrupt at first 
   and apparently its beacause i set height tyo 100%. Only an actual
   value like 100px or 50vh with work for the smooth transition **/
-  height: 60vh;
+  height: 30vh;
   overflow-y: scroll;
 }
 

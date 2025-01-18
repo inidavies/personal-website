@@ -4,7 +4,7 @@ import Collapse from "react-bootstrap/Collapse";
 function ProjectsPage() {
   const [isClicked, setIsClicked] = useState("");
 
-  const mArry = ["1", "2", "3", "4"];
+  const mArry = ["1", "2", "3", "4", "5"];
   const checkEven = (num: number) => {
     return num % 2 == 0;
   };
@@ -22,7 +22,7 @@ function ProjectsPage() {
             ${checkEven(item) ? "evenproject" : "oddproject"}
             ${checkIsFirst(item) ? "" : "layeredcards"}`}
           id={`project${item}`}
-          href={`#/project${item}`}
+          href={`/#project${item}`}
         >
           <div className="projectHeading">
             <div className={"leftheading"}>
