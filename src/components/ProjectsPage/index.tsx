@@ -26,22 +26,33 @@ function ProjectsPage() {
         >
           <div className="projectHeading">
             <div className={"leftheading"}>
-              <h1>GROCERY TRACKER WEBSITE</h1>
-              <h4>
-                Web Design &#x2022; Full-Stack Development &#x2022; UX Design
-              </h4>
+              <div>
+                <h1>GROCERY TRACKER WEBSITE</h1>
+              </div>
+              <div className={"skillsused"}>
+                <p>Web Design </p>
+                <div className="separator">&#x2022;</div>
+                <p> Full-Stack Development </p>
+                <div className="separator">&#x2022;</div>
+                <p> UX Design</p>
+              </div>
             </div>
             <div className={"rightheading"}>
               <div className={"year"}>
-                <h4>2024</h4>
+                <p>2024</p>
               </div>
               <div className={"techstack"}>
-                <h4>HTML &#x2022;</h4>
-                <h4>CSS &#x2022;</h4>
-                <h4>FLASK &#x2022;</h4>
-                <h4>PYTHON &#x2022;</h4>
-                <h4>JINJA &#x2022;</h4>
-                <h4>FIGMA</h4>
+                <p>HTML</p>
+                <div className="separator">&#x2022;</div>
+                <p>CSS</p>
+                <div className="separator">&#x2022;</div>
+                <p>FLASK</p>
+                <div className="separator">&#x2022;</div>
+                <p>PYTHON</p>
+                <div className="separator">&#x2022;</div>
+                <p>JINJA</p>
+                <div className="separator">&#x2022;</div>
+                <p>FIGMA</p>
               </div>
             </div>
           </div>

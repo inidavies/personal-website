@@ -11,7 +11,7 @@
 }
 #projects a{
   cursor:pointer;
-  height: 14vh;
+  height: 13vh;
   overflow: hidden;
   text-decoration: none;
   transition: all 1s ease-in-out;
@@ -53,11 +53,20 @@
 }
 
 .projectHeading{
+  height: 15vh;
   position: sticky;
   top: .2px;
   padding: 1em;
+  padding-left: 0;
   display: flex;
   flex-direction: row;
+  
+}
+.projectHeading h1{
+  padding-left: 12px;
+}
+.projectHeading p{
+  font-size: 15px;
 }
 
 .oddproject .projectHeading{
@@ -70,7 +79,8 @@
 
 .leftheading{
   width: 50%;
-  height: 10vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .rightheading{
@@ -80,33 +90,56 @@
   flex-direction: column;
   margin: 0 10px;
   align-items: flex-end;
+  padding-left: 1em;
 }
-.year{
+.skillsused{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  font-size: 2em;
+  justify-content: flex-start;
+
+}
+
+.separator{
+  font-size: 15px;
+}
+
+.year p{
+  height: 1.7em;
   border: 1px solid black;
   border-radius: 20px;
   width: fit-content;
-  padding: 0 10px;
-  padding-top: 5px;
-  padding-bottom: 0;
-  margin-bottom: 5px;
   display: flex;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
 }
+
+.techstack{
+  width: fit-content;
+  height: 1.7em;
+  max-height: fit-content;
+  text-align: right;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2px;
+}
+
+.techstack p{
+  height: 1.5em;
+
+}
+
 /**.year:hover{
   background-color: grey;
   color: #FFFFFF;
   border-color: grey;
 }**/
-.techstack{
-  justify-content: flex-end;
-  text-align: right;
-  display: flex;
-  border: 1px solid black;
-  border-radius: 20px;
-  width: fit-content;
-  padding: 0 10px;
-  margin-top: 5px;
-}
+
 /**.techstack:hover{
   background-color: grey;
   color: #FFFFFF;
@@ -115,6 +148,24 @@
 .techstack h4{
   margin: 0 3px;
 }
-@media screen and (max-width: 800px){
-
+@media screen and (max-width:1100px){
+  .projectHeading{
+    flex-direction: column;
+    height: 20vh;
+  }
+  .leftheading{
+    width: 100%;
+  }
+  .year{
+    margin: 0;
+    margin-right: 30px;
+    margin-top: 23px;
+  }
+  .rightheading{
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+  }
   }
