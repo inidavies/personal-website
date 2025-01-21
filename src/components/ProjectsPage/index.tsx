@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import Collapse from "react-bootstrap/Collapse";
+import React, { useEffect, useState } from "react";
+const fs = require("fs");
+import { projectData } from "../../service/service";
 
 function ProjectsPage() {
   const [isClicked, setIsClicked] = useState("");
+  const [fileContent, setFileContent] = useState("");
 
   const mArry = ["1", "2", "3", "4", "5"];
   const checkEven = (num: number) => {
@@ -15,7 +17,6 @@ function ProjectsPage() {
 
   const RenderProjects = () => {
     return mArry.map((item: any) => {
-      console.log(checkEven(item));
       return (
         <a
           className={`projectCard 
