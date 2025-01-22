@@ -9,7 +9,13 @@
   padding:0px;
   border-bottom: 1px solid black;
 }
-#projects a{
+
+.project{
+  width:100%;
+  height: 100%;
+  display: flex;
+}
+.project a{
   cursor:pointer;
   height: 13vh;
   overflow: hidden;
@@ -22,7 +28,7 @@
   margin-top: 0px;
   padding: 0;
 }
-#projects a:hover{
+.project a:hover{
       /** i was stumped about why the transition was so abrupt at first 
   and apparently its beacause i set height tyo 100%. Only an actual
   value like 100px or 50vh with work for the smooth transition **/
@@ -30,7 +36,7 @@
   overflow-y: scroll;
 }
 
-#projects a:focus{
+.project a:focus{
   height: 100vh;
   overflow-y: scroll;
 }
@@ -39,7 +45,7 @@
   background: transparent; /* make scrollbar transparent */
 }
 
-#projects p{
+.projecT p{
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -97,6 +103,11 @@
   margin-top: 10px;
   font-size: 2em;
   justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.skillsused p{
+  padding: 0 5px;
 }
 
 .separator{
@@ -129,7 +140,7 @@
 
 .techstack p{
   height: 1.5em;
-
+  padding: 0 5px;
 }
 
 /**.year:hover{
