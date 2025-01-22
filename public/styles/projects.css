@@ -57,8 +57,15 @@
 .evenproject{
   background-color: #FFFFFF;
 }
-
+.projectCard{
+  width: 100%;
+}
+.projectContent{
+  width: 100%;
+  padding:15px;
+}
 .projectHeading{
+  width: 100%;
   position: sticky;
   top: .2px;
   padding: 1em;

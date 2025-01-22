@@ -3,7 +3,7 @@ import React, { useState } from "react";
 interface projectProps {
   projectIndex: number;
   projectName: string;
-  projectSkills: string;
+  projectSkills: string[];
   projectYear: string;
   projectTechStack: string[];
   projectContent: string;
@@ -24,9 +24,26 @@ function Project(props: projectProps) {
     return num == 1;
   };
 
-  const RenderProjects = () => {
+  const RenderSkills = () => {
+    return skills.map((item: any, index: number) => {
+      if (index + 1 - skills.length == 0) {
+        return (
+          <>
+            <p>{item}</p>
+          </>
+        );
+      }
+      return (
+        <>
+          <p>{item}</p>
+          <div className="separator">&#x2022;</div>
+        </>
+      );
+    });
+  };
+
+  const RenderTechStack = () => {
     return techStack.map((item: any, index: number) => {
-      console.log(index, techStack.length);
       if (index + 1 - techStack.length == 0) {
         return (
           <>
@@ -57,22 +74,16 @@ function Project(props: projectProps) {
             <div>
               <h1>{name}</h1>
             </div>
-            <div className={"skillsused"}>
-              <p>Web Design </p>
-              <div className="separator">&#x2022;</div>
-              <p> Full-Stack Development </p>
-              <div className="separator">&#x2022;</div>
-              <p> UX Design</p>
-            </div>
+            <div className={"skillsused"}>{RenderSkills()}</div>
           </div>
           <div className={"rightheading"}>
             <div className={"year"}>
-              <p>2024</p>
+              <p>{year}</p>
             </div>
-            <div className={"techstack"}>{RenderProjects()}</div>
+            <div className={"techstack"}>{RenderTechStack()}</div>
           </div>
         </div>
-        <p>{content}</p>
+        <div className="projectContent">{content}</div>
       </a>
     </div>
   );
