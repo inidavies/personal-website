@@ -8,7 +8,7 @@ interface projectProps {
   projectTechStack: string[];
   projectContent: string;
 }
-function Project1(props: projectProps) {
+function Project(props: projectProps) {
   const [name, setName] = useState(props.projectName);
   const [skills, setSkills] = useState(props.projectSkills);
   const [year, setYear] = useState(props.projectYear);
@@ -77,4 +77,4 @@ function Project1(props: projectProps) {
     </div>
   );
 }
-export { Project1 };
+export { Project };

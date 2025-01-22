@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 const fs = require("fs");
-import { Project1 } from "./Project1";
+import { Project } from "./Project";
 
 function ProjectsPage() {
   const [isClicked, setIsClicked] = useState("");
@@ -23,7 +23,7 @@ function ProjectsPage() {
 
   return (
     <div id="projects" className="mypage">
-      <Project1
+      <Project
         projectIndex={1}
         projectName={"GROCERY TRACKER WEBSITE"}
         projectSkills={"Web Designs"}
@@ -232,7 +232,7 @@ function ProjectsPage() {
             or else he endures pains to avoid worse pains."`}
       />
 
-      <Project1
+      <Project
         projectIndex={2}
         projectName={"GROCERY TRACKER WEBSITE"}
         projectSkills={"Web Designs"}
@@ -441,7 +441,7 @@ function ProjectsPage() {
             or else he endures pains to avoid worse pains."`}
       />
 
-      <Project1
+      <Project
         projectIndex={3}
         projectName={"GROCERY TRACKER WEBSITE"}
         projectSkills={"Web Designs"}
@@ -650,7 +650,7 @@ function ProjectsPage() {
             or else he endures pains to avoid worse pains."`}
       />
 
-      <Project1
+      <Project
         projectIndex={4}
         projectName={"GROCERY TRACKER WEBSITE"}
         projectSkills={"Web Designs"}
