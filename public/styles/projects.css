@@ -6,8 +6,10 @@
   overflow: hidden;
   justify-content: left;
   align-items: left;
-  padding:0px;
-  border-bottom: 1px solid black;
+  padding:50vh 0px;
+  padding-top: 30vh;
+  /**border-bottom: 1px solid black;**/
+  background-color: #FFFFFF;
 }
 
 .project{
@@ -24,9 +26,12 @@
   color:black;
   border-top: 1px solid black;
   border-left: 1px solid black;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   margin-top: 0px;
   padding: 0;
+}
+#project3{
+  border-bottom: 1px solid black;
 }
 .project a:hover{
       /** i was stumped about why the transition was so abrupt at first 
