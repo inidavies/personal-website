@@ -31,7 +31,7 @@ export default function ContactForm() {
     }
   };
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     // prevents default behavior like refreshing the whole page
     event.preventDefault();
 
@@ -49,7 +49,7 @@ export default function ContactForm() {
       };
       emailjs.init(options);
 
-      var templateParams = {
+      const templateParams = {
         from_name: senderName,
         from_email: senderEmail,
         to_name: NAME,

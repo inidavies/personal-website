@@ -9,12 +9,12 @@ interface projectProps {
   projectContent: string;
 }
 function Project(props: projectProps) {
-  const [name, setName] = useState(props.projectName);
-  const [skills, setSkills] = useState(props.projectSkills);
-  const [year, setYear] = useState(props.projectYear);
-  const [techStack, setTechStack] = useState(props.projectTechStack);
-  const [index, setIndex] = useState(props.projectIndex);
-  const [content, setContent] = useState(props.projectContent);
+  const name = props.projectName;
+  const skills = props.projectSkills
+  const year = props.projectYear;
+  const techStack = props.projectTechStack;
+  const index = props.projectIndex;
+  const content = props.projectContent;
 
   const checkEven = (num: number) => {
     return num % 2 == 0;

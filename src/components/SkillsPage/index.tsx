@@ -13,7 +13,7 @@ function SkillsPage() {
         <ul>
         {skillList.map((skill) => {
           return (
-          <li className="item">
+          <li key={skill} className="item">
             <h2>{skill}</h2>
           </li>)
         })}
