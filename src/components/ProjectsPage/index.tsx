@@ -28,7 +28,7 @@ function ProjectsPage() {
       
       <Project
         projectIndex={3}
-        projectName={"GROCERY TRACKER WEBSITE"}
+        projectName={"GROCERY TRACKER"}
         projectSkills={["Web Design", "Full-Stack Development", "UI/UX Design"]}
         projectYear={"2023"}
         projectTechStack={["HTML", "CSS", "FLASK", "PYTHON", "JINJA", "FIGMA"]}
