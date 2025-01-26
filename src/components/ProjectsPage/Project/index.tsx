@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 interface projectProps {
   projectIndex: number;
@@ -25,7 +25,7 @@ function Project(props: projectProps) {
   };
 
   const RenderSkills = () => {
-    return skills.map((item: any, index: number) => {
+    return skills.map((item: string, index: number) => {
       if (index + 1 - skills.length == 0) {
         return (
           <>
@@ -43,7 +43,7 @@ function Project(props: projectProps) {
   };
 
   const RenderTechStack = () => {
-    return techStack.map((item: any, index: number) => {
+    return techStack.map((item: string, index: number) => {
       if (index + 1 - techStack.length == 0) {
         return (
           <>
