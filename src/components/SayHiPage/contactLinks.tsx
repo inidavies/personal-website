@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 export default function ContactLinks() {
   const [hasMounted, setHasMounted] = useState(false);
-
   useEffect(() => {
     setHasMounted(true);
   }, []);
