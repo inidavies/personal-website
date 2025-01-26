@@ -1,4 +1,5 @@
 function SkillsPage() {
+  const skillList = ["Python", "HTML", "CSS", "Typescript", "React JS", "React Native", "Flask", "Jinja", "Figma"];
   return (
     <div id="skills" className="mypage alternate-page aboutAndSkills">
       <div id="skillSummary">
@@ -9,35 +10,13 @@ function SkillsPage() {
         </p>
       </div>
       <div id="skillList">
-        {/*make this a iteration on a list */}
         <ul>
+        {skillList.map((skill) => {
+          return (
           <li className="item">
-            <h2>Python</h2>
-          </li>
-          <li className="item">
-            <h2>HTML</h2>
-          </li>
-          <li className="item">
-            <h2>CSS</h2>
-          </li>
-          <li className="item">
-            <h2>Typescript</h2>
-          </li>
-          <li className="item">
-            <h2>React JS</h2>
-          </li>
-          <li className="item">
-            <h2>React Native</h2>
-          </li>
-          <li className="item">
-            <h2>Flask</h2>
-          </li>
-          <li className="item">
-            <h2>Jinja</h2>
-          </li>
-          <li className="item">
-            <h2>Figma</h2>
-          </li>
+            <h2>{skill}</h2>
+          </li>)
+        })}
         </ul>
       </div>
     </div>
