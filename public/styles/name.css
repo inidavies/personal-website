@@ -5,4 +5,7 @@
   }
 
 @media screen and (max-width: 800px){
+  #myname h1{
+    font-size: 5em;
+  }
 }
