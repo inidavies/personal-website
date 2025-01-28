@@ -6,7 +6,7 @@ interface projectProps {
   projectSkills: string[];
   projectYear: string;
   projectTechStack: string[];
-  projectContent: string;
+  projectContent: any;
 }
 function Project(props: projectProps) {
   const name = props.projectName;
@@ -83,7 +83,7 @@ function Project(props: projectProps) {
             <div className={"techstack"}>{RenderTechStack()}</div>
           </div>
         </div>
-        <div className="projectContent">{content}</div>
+        <div className="projectContent" >{content}</div>
       </a>
     </div>
   );
