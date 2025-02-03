@@ -7,6 +7,7 @@ interface projectProps {
   projectYear: string;
   projectTechStack: string[];
   projectContent: any;
+  projectLink: string;
 }
 function Project(props: projectProps) {
   const name = props.projectName;
@@ -15,6 +16,7 @@ function Project(props: projectProps) {
   const techStack = props.projectTechStack;
   const index = props.projectIndex;
   const content = props.projectContent;
+  const link = props.projectLink;
 
   const checkEven = (num: number) => {
     return num % 2 == 0;
@@ -78,7 +80,7 @@ function Project(props: projectProps) {
           </div>
           <div className={"rightheading"}>
             <div className={"year"}>
-              <p>{year}</p>
+              <a href={link} >{year}</a>
             </div>
             <div className={"techstack"}>{RenderTechStack()}</div>
           </div>

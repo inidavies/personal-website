@@ -11,6 +11,7 @@ function ProjectsPage() {
         projectSkills={["Web Design", "Front-end Development", "UI/UX Design"]}
         projectYear={"2024-2025"}
         projectTechStack={["HTML", "CSS", "REACT JS", "TYPESCRIPT", "FIGMA"]}
+        projectLink="https://github.com/inidavies/personal-website"
         projectContent={
                 <>
                 <h5><b>Problem Statement</b></h5>
@@ -70,6 +71,7 @@ function ProjectsPage() {
         ]}
         projectYear={"2023-2024"}
         projectTechStack={["REACT NATIVE", "CSS", "TYPESCRIPT"]}
+        projectLink="https://scoutmasterapp.com/"
         projectContent={
                 <>
                 <h5><b>Problem Statement</b></h5>
@@ -89,8 +91,9 @@ function ProjectsPage() {
                       and smoother performance, while maintaining the essential features that made the app so unique when it originally launched in 2020. 
                   </p>
                   <p>
-                      Note: ScoutMaster has been non-operational since 2022 and we developed a new version of the mobile app from scratch. The new version is 
-                      not live and I'm unable share the assets here for copyright reasons, but I'm happy to discuss technical details.
+                      Note: ScoutMaster has been non-operational since 2022 and we developed a new version of the mobile app from scratch. 
+                      The website linked displays the app's older UI but The new version is not live and 
+                      I'm unable share the assets here for copyright reasons, but I'm happy to discuss technical details.
                   </p>
                   <h5><b>My Role</b></h5>
                   <ul>
@@ -126,6 +129,7 @@ function ProjectsPage() {
         projectSkills={["Web Design", "Full-Stack Development", "UI/UX Design"]}
         projectYear={"2023"}
         projectTechStack={["HTML", "CSS", "FLASK", "PYTHON", "JINJA", "FIGMA"]}
+        projectLink="https://github.com/EthanWillinger/GroceryTracker"
         projectContent={
           <>
           <h5><b>Problem Statement</b></h5>
