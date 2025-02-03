@@ -128,10 +128,83 @@ function ProjectsPage() {
         projectTechStack={["HTML", "CSS", "FLASK", "PYTHON", "JINJA", "FIGMA"]}
         projectContent={
           <>
-            <p>Grocery Tracker is a web application that helps users track their grocery spending and manage their shopping lists.
-            Users can create an account, add items to their shopping list, and track their spending. The app also provides 
-            analytics on their spending habits and suggests ways to save money on groceries.
+          <h5><b>Problem Statement</b></h5>
+            <p>
+              The goal of this project is to reduce food waste and help the user save money. The idea is to implement a web application that: 
             </p>
+            <ul>
+              <li>Reads the barcode of grocery items and provides information on the products.</li>
+              <li>Keeps an inventory of all the entered grocery items.</li>
+              <li>Estimates the expiration date of each item in inventory.</li>
+              <li>Notifies the user via email before their groceries expire.</li>
+              
+            </ul>
+            <div
+                style={{
+                  height: "350px",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  alignItems: "center",
+                  padding: "10px",            
+                }}
+                >
+                  <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
+                          <h6 style={{textAlign:"center", fontWeight:"bold"}}>Project Structure</h6>
+                          <Image src="/images/grocery-tracker/gtsc.jpg"
+                          alt="screenshot of the design system planning for my personal website"
+                          width={500}
+                          height={300} />
+                  </div>
+                  <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
+                          <h6 style={{textAlign:"center", fontWeight:"bold"}}>Log In Page</h6>
+                          <Image src="/images/grocery-tracker/gtlogin.jpg"
+                          alt="screenshot of the design system planning for my personal website"
+                          width={500}
+                          height={300} />
+                  </div>
+            </div>
+            <div
+                style={{
+                  height: "500px",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  alignItems: "center",
+                  padding: "10px",              
+                }}
+                >
+                              <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
+                          <h6 style={{textAlign:"center", fontWeight:"bold"}}>Sign Up Page</h6>
+                          <Image src="/images/grocery-tracker/gtsignup.jpg"
+                          alt="screenshot of the design system planning for my personal website"
+                          width={500}
+                          height={350} />
+                  </div>
+                  <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
+                          <h6 style={{textAlign:"center", fontWeight:"bold"}}>Grocery List Page</h6>
+                          <Image src="/images/grocery-tracker/gthome.jpg"
+                          alt="screenshot of the design system planning for my personal website"
+                          width={550}
+                          height={350} />
+                  </div>
+                </div>
+                <div
+                style={{
+                  height: "600px",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  alignItems: "center",
+                  padding: "10px", 
+                  marginBottom: "50px"             
+                }}
+                >
+                              <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
+                          <h6 style={{textAlign:"center", fontWeight:"bold"}}>User Pantry Page</h6>
+                          <Image src="/images/grocery-tracker/gtlist.jpg"
+                          alt="screenshot of the design system planning for my personal website"
+                          width={800}
+                          height={450} />
+                  </div>
+                </div>
           </>
         }
       />
