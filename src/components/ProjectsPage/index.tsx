@@ -71,11 +71,50 @@ function ProjectsPage() {
         projectTechStack={["REACT NATIVE", "CSS", "TYPESCRIPT"]}
         projectContent={
                 <>
-                  <p>ScoutMaster is a mobile application that helps scout leaders and parents manage their scouts' activities, 
-                  track their progress, and communicate with each other. The app allows users to create and manage events, 
-                  track attendance, and send notifications to members. It also includes a chat feature for members to communicate 
-                  with each other and share photos and videos
+                <h5>Problem Statement</h5>
+                  <p> 
+                      ScoutMaster was my senior year Computer Science Capstone project, created to be a free GPS mobile application 
+                      for lovers of media! Ever wanted to visit where your favorite film or series was filmed?
+                      ScoutMaster’s intuitive design makes this possible with its easy access to the web’s most comprehensive database 
+                      of media filming locations + its ability to connect & communicate with like-minded pop-culture enthusiasts 
+                      around the world! Users are able to "scout" the locations they have visited and it will appear on their profile.
+                      Our capstone sponsor and founder of ScoutMaster, Matthew Muhl, maintains an ever growing database 
+                      of 1000+ filming locations for movies, shows, and music videos.
                   </p>
+                  <p>
+                      The motivation for the project was to collaborate 
+                      on the re-launch of ScoutMaster using existing files & assets. 
+                      My team consisted of 8 software engineers, with the aim to enhance the user experience with cleaner user interface 
+                      and smoother performance, while maintaining the essential features that made the app so unique when it originally launched in 2020. 
+                  </p>
+                  <p>
+                      Note: ScoutMaster has been non-operational since 2022 and we developed a new version of the mobile app from scratch. The new version is 
+                      not live and I'm unable share the assets here for copyright reasons, but I'm happy to discuss technical details.
+                  </p>
+                  <h5>My Role</h5>
+                  <ul>
+                      <li>Designed and developed the front-end of the mobile app using <b>React Native</b>, <b>Typescript</b>, and <b>CSS</b>.</li>
+                      <li>Developed a mobile application compatible with both Android and IOS devices, with design and performance optimized for both operating systems</li>
+                      <li>Collaborated with the back-end team to integrate the front-end with the back-end using <b>RESTful APIs</b>.</li>
+                      <li>Conducted user testing and gathered feedback to improve the user experience.</li>
+                  </ul>
+                  
+                  <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-around",
+                    alignItems: "center",
+                    padding: "10px",                  
+                  }}
+                  >
+                    <div style={{height:'850px', padding: "10px", marginRight: "50px"}}>
+                            <h6 style={{textAlign:"center"}}>Tech Stack</h6>
+                            <Image src="/images/personal-website/smtech.jpg"
+                            alt="screenshot of the design system planning for my personal website"
+                            width={600}
+                            height={300} />
+                    </div>
+                  </div>
                 </>
         }
       />
