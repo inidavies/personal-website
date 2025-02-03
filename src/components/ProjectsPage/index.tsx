@@ -80,7 +80,7 @@ function ProjectsPage() {
                       for lovers of media! Ever wanted to visit where your favorite film or series was filmed?
                       ScoutMaster&apos;s intuitive design makes this possible with its easy access to the web&apos;s most comprehensive database 
                       of media filming locations + its ability to connect & communicate with like-minded pop-culture enthusiasts 
-                      around the world! Users are able to "scout" the locations they have visited and it will appear on their profile.
+                      around the world! Users are able to &quot;scout&quot; the locations they have visited and it will appear on their profile.
                       Our capstone sponsor and founder of ScoutMaster, Matthew Muhl, maintains an ever growing database 
                       of 1000+ filming locations for movies, shows, and music videos.
                   </p>
