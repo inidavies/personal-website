@@ -13,6 +13,7 @@ function ProjectsPage() {
         projectTechStack={["HTML", "CSS", "REACT JS", "TYPESCRIPT", "FIGMA"]}
         projectContent={
                 <>
+                <h5><b>Problem Statement</b></h5>
                                   <div
                   style={{
                     display: "flex",
@@ -41,14 +42,14 @@ function ProjectsPage() {
                   }}
                   >
                         <div style={{height:'850px', padding: "10px", marginRight: "50px"}}>
-                          <h6>Design System</h6>
+                          <h6><b>Design System</b></h6>
                           <Image src="/images/personal-website/design-system.jpg"
                           alt="screenshot of the design system planning for my personal website"
                           width={650}
                           height={600} />
                         </div>
                         <div style={{height:'850px', padding: "10px", marginRight: "200px"}}>
-                          <h6>Mid-Fidelity Mockups</h6>
+                          <h6><b>Mid-Fidelity Mockups</b></h6>
                           <img src="/images/personal-website/mid-fed.jpg" 
                           alt="screenshot of mockups of the my personal website" 
                           width={500}
@@ -71,7 +72,7 @@ function ProjectsPage() {
         projectTechStack={["REACT NATIVE", "CSS", "TYPESCRIPT"]}
         projectContent={
                 <>
-                <h5>Problem Statement</h5>
+                <h5><b>Problem Statement</b></h5>
                   <p> 
                       ScoutMaster was my senior year Computer Science Capstone project, created to be a free GPS mobile application 
                       for lovers of media! Ever wanted to visit where your favorite film or series was filmed?
@@ -91,7 +92,7 @@ function ProjectsPage() {
                       Note: ScoutMaster has been non-operational since 2022 and we developed a new version of the mobile app from scratch. The new version is 
                       not live and I'm unable share the assets here for copyright reasons, but I'm happy to discuss technical details.
                   </p>
-                  <h5>My Role</h5>
+                  <h5><b>My Role</b></h5>
                   <ul>
                       <li>Designed and developed the front-end of the mobile app using <b>React Native</b>, <b>Typescript</b>, and <b>CSS</b>.</li>
                       <li>Developed a mobile application compatible with both Android and IOS devices, with design and performance optimized for both operating systems</li>
@@ -108,11 +109,11 @@ function ProjectsPage() {
                   }}
                   >
                     <div style={{height:'850px', padding: "10px", marginRight: "50px"}}>
-                            <h6 style={{textAlign:"center"}}>Tech Stack</h6>
+                            <h6 style={{textAlign:"center", fontWeight:"bold"}}>Tech Stack</h6>
                             <Image src="/images/personal-website/smtech.jpg"
                             alt="screenshot of the design system planning for my personal website"
-                            width={600}
-                            height={300} />
+                            width={900}
+                            height={500} />
                     </div>
                   </div>
                 </>
