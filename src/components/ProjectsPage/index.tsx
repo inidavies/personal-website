@@ -92,8 +92,8 @@ function ProjectsPage() {
                   </p>
                   <p>
                       Note: ScoutMaster has been non-operational since 2022 and we developed a new version of the mobile app from scratch. 
-                      The website linked displays the app's older UI but The new version is not live and 
-                      I'm unable share the assets here for copyright reasons, but I'm happy to discuss technical details.
+                      The website linked displays the app&apos;s older UI but The new version is not live and 
+                      I'm unable share the assets here for copyright reasons, but I&apos;m happy to discuss technical details.
                   </p>
                   <h5><b>My Role</b></h5>
                   <ul>
