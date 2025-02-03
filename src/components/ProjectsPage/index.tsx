@@ -78,7 +78,7 @@ function ProjectsPage() {
                   <p> 
                       ScoutMaster was my senior year Computer Science Capstone project, created to be a free GPS mobile application 
                       for lovers of media! Ever wanted to visit where your favorite film or series was filmed?
-                      ScoutMaster’s intuitive design makes this possible with its easy access to the web’s most comprehensive database 
+                      ScoutMaster&apos;s intuitive design makes this possible with its easy access to the web&apos;s most comprehensive database 
                       of media filming locations + its ability to connect & communicate with like-minded pop-culture enthusiasts 
                       around the world! Users are able to "scout" the locations they have visited and it will appear on their profile.
                       Our capstone sponsor and founder of ScoutMaster, Matthew Muhl, maintains an ever growing database 
@@ -114,7 +114,7 @@ function ProjectsPage() {
                     <div style={{height:'850px', padding: "10px", marginRight: "50px"}}>
                             <h6 style={{textAlign:"center", fontWeight:"bold"}}>Tech Stack</h6>
                             <Image src="/images/personal-website/smtech.jpg"
-                            alt="screenshot of the design system planning for my personal website"
+                            alt="photo of the tech stack used in the ScoutMaster project, including React Native, Typescript, and CSS"
                             width={900}
                             height={500} />
                     </div>
@@ -155,14 +155,14 @@ function ProjectsPage() {
                   <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
                           <h6 style={{textAlign:"center", fontWeight:"bold"}}>Project Structure</h6>
                           <Image src="/images/grocery-tracker/gtsc.jpg"
-                          alt="screenshot of the design system planning for my personal website"
+                          alt="screenshot of the project structire for the grocery tracker project"
                           width={500}
                           height={300} />
                   </div>
                   <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
                           <h6 style={{textAlign:"center", fontWeight:"bold"}}>Log In Page</h6>
                           <Image src="/images/grocery-tracker/gtlogin.jpg"
-                          alt="screenshot of the design system planning for my personal website"
+                          alt="screenshot of the login page for the grocery tracker project"
                           width={500}
                           height={300} />
                   </div>
@@ -179,14 +179,14 @@ function ProjectsPage() {
                               <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
                           <h6 style={{textAlign:"center", fontWeight:"bold"}}>Sign Up Page</h6>
                           <Image src="/images/grocery-tracker/gtsignup.jpg"
-                          alt="screenshot of the design system planning for my personal website"
+                          alt="screenshot of the sign up page for the grocery tracker project"
                           width={500}
                           height={350} />
                   </div>
                   <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
                           <h6 style={{textAlign:"center", fontWeight:"bold"}}>Grocery List Page</h6>
                           <Image src="/images/grocery-tracker/gthome.jpg"
-                          alt="screenshot of the design system planning for my personal website"
+                          alt="screenshot of the home page for the grocery tracker project"
                           width={550}
                           height={350} />
                   </div>
@@ -204,7 +204,7 @@ function ProjectsPage() {
                               <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
                           <h6 style={{textAlign:"center", fontWeight:"bold"}}>User Pantry Page</h6>
                           <Image src="/images/grocery-tracker/gtlist.jpg"
-                          alt="screenshot of the design system planning for my personal website"
+                          alt="screenshot of the pantry page for the grocery tracker project"
                           width={800}
                           height={450} />
                   </div>
