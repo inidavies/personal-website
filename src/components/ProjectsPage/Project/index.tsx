@@ -6,7 +6,7 @@ interface projectProps {
   projectSkills: string[];
   projectYear: string;
   projectTechStack: string[];
-  projectContent: any;
+  projectContent: React.JSX.Element;
   projectLink: string;
 }
 function Project(props: projectProps) {
