@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 interface projectProps {
   projectIndex: number;
@@ -17,6 +17,14 @@ function Project(props: projectProps) {
   const index = props.projectIndex;
   const content = props.projectContent;
   const link = props.projectLink;
+
+  const [isClicked, setIsClicked] = React.useState(false);
+
+  function expand(e: React.MouseEvent) {
+    e.preventDefault();
+    e.currentTarget.classList.toggle("clicked");
+    console.log(e.currentTarget.classList);
+  }
 
   const checkEven = (num: number) => {
     return num % 2 == 0;
@@ -67,23 +75,33 @@ function Project(props: projectProps) {
       <a
         className={`projectCard 
             ${checkEven(index) ? "evenproject" : "oddproject"}
-            ${checkIsFirst(index) ? "" : "layeredcards"}`}
+            ${checkIsFirst(index) ? "" : "layeredcards"}
+            ${isClicked ? "clicked" : ""}`
+          }
         id={`project${index}`}
-        href={`/#project${index}`}
+        onClick={(e) => expand(e)}
       >
         <div className="projectHeading">
+          
           <div className={"leftheading"}>
             <div>
               <h1>{name}</h1>
             </div>
             <div className={"skillsused"}>{RenderSkills()}</div>
           </div>
+
           <div className={"rightheading"}>
             <div className={"year"}>
-              <a href={link} >{year}</a>
+              <a 
+              href={link ? link : "#"}
+              target="_blank"
+              rel="noopener noreferrer">
+                {year}
+              </a>
             </div>
             <div className={"techstack"}>{RenderTechStack()}</div>
           </div>
+          
         </div>
         <div className="projectContent" >{content}</div>
       </a>

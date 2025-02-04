@@ -41,9 +41,9 @@
   overflow-y: scroll;
 }
 
-.project a:focus{
-  height: 100vh;
-  overflow-y: scroll;
+.clicked{
+  height: 100vh !important;
+  overflow-y: scroll !important;
 }
 ::-webkit-scrollbar {
   width: 0px;
