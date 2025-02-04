@@ -18,12 +18,9 @@ function Project(props: projectProps) {
   const content = props.projectContent;
   const link = props.projectLink;
 
-  const [isClicked, setIsClicked] = React.useState(false);
-
   function expand(e: React.MouseEvent) {
     e.preventDefault();
     e.currentTarget.classList.toggle("clicked");
-    console.log(e.currentTarget.classList);
   }
 
   const checkEven = (num: number) => {
@@ -75,8 +72,7 @@ function Project(props: projectProps) {
       <a
         className={`projectCard 
             ${checkEven(index) ? "evenproject" : "oddproject"}
-            ${checkIsFirst(index) ? "" : "layeredcards"}
-            ${isClicked ? "clicked" : ""}`
+            ${checkIsFirst(index) ? "" : "layeredcards"}`
           }
         id={`project${index}`}
         onClick={(e) => expand(e)}
