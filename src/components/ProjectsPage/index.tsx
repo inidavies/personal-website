@@ -113,7 +113,7 @@ function ProjectsPage() {
                   >
                     <div style={{height:'850px', padding: "10px", marginRight: "50px"}}>
                             <h6 style={{textAlign:"center", fontWeight:"bold"}}>Tech Stack</h6>
-                            <Image src="/images/personal-website/smtech.jpg"
+                            <Image src="/images/scoutmaster/smtech.jpg"
                             alt="photo of the tech stack used in the ScoutMaster project, including React Native, Typescript, and CSS"
                             width={900}
                             height={500} />
