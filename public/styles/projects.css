@@ -50,7 +50,7 @@
   background: transparent; /* make scrollbar transparent */
 }
 
-.projecT p{
+.project p{
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -183,7 +183,7 @@
 @media screen and (max-width:1000px){
   .projectHeading{
     flex-direction: column;
-    height: 23vh;
+    height: 27vh;
   }
   .leftheading{
     width: 100%;
@@ -201,15 +201,12 @@
     justify-content: flex-start;
     margin: 0;
   }
+  .rightheading{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 2vh;
   }
-
-  @media screen and (max-width:1000px){
-    .rightheading{
-      flex-direction: column;
-      align-items: flex-start;
-      padding-bottom: 2vh;
-    }
-    .projectContent{
-      padding-top: 10vh;
-    }
+  .projectContent{
+    padding-top: 10vh;
   }
+}

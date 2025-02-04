@@ -14,47 +14,38 @@ function ProjectsPage() {
         projectLink="https://github.com/inidavies/personal-website"
         projectContent={
                 <>
-                <h5><b>Problem Statement</b></h5>
-                                  <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-around",
-                    alignItems: "center",
-                    padding: "10px",
-                  }}
-                  >
-                  <p 
-                  style={{width: '50%', height: '100px'}}
-                  >This project was created to showcase my skills in front-end development and UI/UX design, and list my projects.
-                  On Figma, I determined the assets, color-scheme, and logo then created low and high-fidelity wireframes and mockups 
-                  to visualize the design and user experience on various screen sizes. I then decided on my tech stack and began development.</p>
+                <h5><strong>Problem Statement</strong></h5>
+                  <div id="pwProblemStatement">
+                    <p className="pwPSContent">This project was created to showcase my skills in front-end development and UI/UX design, and list my projects.
+                    On Figma, I determined the assets, color-scheme, and logo then created low and high-fidelity wireframes and mockups 
+                    to visualize the design and user experience on various screen sizes. I then decided on my tech stack and began development.</p>
 
-                  <p
-                  style={{width: '50%', height: '100px'}}
-                  >My goal was to create a responsive, clean, intuitive, and easily navigable website, that clearly showcases my projects and skills.
-                  This project is not static, I will continuously iterate on it to improve the design as my skills develop.</p>
+                    <p className="pwPSContent">My goal was to create a responsive, clean, intuitive, and easily navigable website, that clearly showcases my projects and skills.
+                    This project is not static, I will continuously iterate on it to improve the design as my skills develop.</p>
                   </div>
                   <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-around",
-                    alignItems: "center",
-                    padding: "10px",                  
-                  }}
+                  id="pwImages"
+                  className="projectImages"
                   >
-                        <div style={{height:'850px', padding: "10px", marginRight: "50px"}}>
-                          <h6><b>Design System</b></h6>
+                        <div className="pwImage">
+                          <h6 className = "imageHeading">Design System</h6>
                           <Image src="/images/personal-website/design-system.jpg"
                           alt="screenshot of the design system planning for my personal website"
-                          width={650}
-                          height={600} />
+                          width={0}
+                          height={0} 
+                          sizes="100vw"
+                          id="pwdsImage"
+                          className="smallerImage"/>
                         </div>
-                        <div style={{height:'850px', padding: "10px", marginRight: "200px"}}>
-                          <h6><b>Mid-Fidelity Mockups</b></h6>
+                        <div className="pwImage" style={{marginRight: "200px"}}>
+                          <h6 className = "imageHeading">Mid-Fidelity Mockups</h6>
                           <img src="/images/personal-website/mid-fed.jpg" 
                           alt="screenshot of mockups of the my personal website" 
-                          width={500}
-                          height={800}/>
+                          width={0}
+                          height={0} 
+                          sizes="100vw"
+                          id="pwmfImage"
+                          className="smallerImage"/>
                         </div>
                       </div>   
                 </>
@@ -74,7 +65,7 @@ function ProjectsPage() {
         projectLink="https://scoutmasterapp.com/"
         projectContent={
                 <>
-                <h5><b>Problem Statement</b></h5>
+                <h5><strong>Problem Statement</strong></h5>
                   <p> 
                       ScoutMaster was my senior year Computer Science Capstone project, created to be a free GPS mobile application 
                       for lovers of media! Ever wanted to visit where your favorite film or series was filmed?
@@ -95,28 +86,27 @@ function ProjectsPage() {
                       The website linked displays the app&apos;s older UI but The new version is not live and 
                       I&apos;ble share the assets here for copyright reasons, but I&apos;m happy to discuss technical details.
                   </p>
-                  <h5><b>My Role</b></h5>
+                  <h5><strong>My Role</strong></h5>
                   <ul>
-                      <li>Designed and developed the front-end of the mobile app using <b>React Native</b>, <b>Typescript</b>, and <b>CSS</b>.</li>
+                      <li>Designed and developed the front-end of the mobile app using <strong>React Native</strong>, <strong>Typescript</strong>, and <strong>CSS</strong>.</li>
                       <li>Developed a mobile application compatible with both Android and IOS devices, with design and performance optimized for both operating systems</li>
-                      <li>Collaborated with the back-end team to integrate the front-end with the back-end using <b>RESTful APIs</b>.</li>
+                      <li>Collaborated with the back-end team to integrate the front-end with the back-end using <strong>RESTful APIs</strong>.</li>
                       <li>Conducted user testing and gathered feedback to improve the user experience.</li>
                   </ul>
                   
                   <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-around",
-                    alignItems: "center",
-                    padding: "10px",                  
-                  }}
+                  id="smImages"
+                  className="projectImages"
                   >
-                    <div style={{height:'850px', padding: "10px", marginRight: "50px"}}>
-                            <h6 style={{textAlign:"center", fontWeight:"bold"}}>Tech Stack</h6>
+                    <div className="smImage">
+                            <h6 className = "imageHeading">Tech Stack</h6>
                             <Image src="/images/scoutmaster/smtech.jpg"
                             alt="photo of the tech stack used in the ScoutMaster project, including React Native, Typescript, and CSS"
-                            width={900}
-                            height={500} />
+                            width={0}
+                          height={0} 
+                          sizes="100vw"
+                          id="smtsImage" 
+                          className="smallerImage"/>
                     </div>
                   </div>
                 </>
@@ -132,7 +122,7 @@ function ProjectsPage() {
         projectLink="https://github.com/EthanWillinger/GroceryTracker"
         projectContent={
           <>
-          <h5><b>Problem Statement</b></h5>
+          <h5><strong>Problem Statement</strong></h5>
             <p>
               The goal of this project is to reduce food waste and help the user save money. The idea is to implement a web application that: 
             </p>
@@ -144,71 +134,54 @@ function ProjectsPage() {
               
             </ul>
             <div
-                style={{
-                  height: "350px",
-                  display: "flex",
-                  justifyContent: "space-around",
-                  alignItems: "center",
-                  padding: "10px",            
-                }}
+            className="gtImages projectImages"
                 >
-                  <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
-                          <h6 style={{textAlign:"center", fontWeight:"bold"}}>Project Structure</h6>
+                  <div className="gtImage">
+                          <h6 className = "imageHeading">Project Structure</h6>
                           <Image src="/images/grocery-tracker/gtsc.jpg"
                           alt="screenshot of the project structire for the grocery tracker project"
-                          width={500}
-                          height={300} />
+                          width={0}
+                          height={0} 
+                          sizes="100vw"
+                          className="gtinnerImage smallerImage" />
                   </div>
-                  <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
-                          <h6 style={{textAlign:"center", fontWeight:"bold"}}>Log In Page</h6>
+                  <div className="gtImage">
+                          <h6 className = "imageHeading">Log In Page</h6>
                           <Image src="/images/grocery-tracker/gtlogin.jpg"
                           alt="screenshot of the login page for the grocery tracker project"
-                          width={500}
-                          height={300} />
+                          width={0}
+                          height={0} 
+                          sizes="100vw"
+                          className="gtinnerImage smallerImage" />
                   </div>
-            </div>
-            <div
-                style={{
-                  height: "500px",
-                  display: "flex",
-                  justifyContent: "space-around",
-                  alignItems: "center",
-                  padding: "10px",              
-                }}
-                >
-                              <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
-                          <h6 style={{textAlign:"center", fontWeight:"bold"}}>Sign Up Page</h6>
+                              <div className="gtImage">
+                          <h6 className = "imageHeading">Sign Up Page</h6>
                           <Image src="/images/grocery-tracker/gtsignup.jpg"
                           alt="screenshot of the sign up page for the grocery tracker project"
-                          width={500}
-                          height={350} />
+                          width={0}
+                          height={0} 
+                          sizes="100vw"
+                          className="gtinnerImage smallerImage"  />
                   </div>
-                  <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
-                          <h6 style={{textAlign:"center", fontWeight:"bold"}}>Grocery List Page</h6>
+                  <div className="gtImage">
+                            <h6 className="imageHeading">Grocery List Page</h6>
                           <Image src="/images/grocery-tracker/gthome.jpg"
                           alt="screenshot of the home page for the grocery tracker project"
-                          width={550}
-                          height={350} />
+                          width={0}
+                          height={0} 
+                          sizes="100vw"
+                          className="gtinnerImage smallerImage"  />
                   </div>
-                </div>
-                <div
-                style={{
-                  height: "600px",
-                  display: "flex",
-                  justifyContent: "space-around",
-                  alignItems: "center",
-                  padding: "10px", 
-                  marginBottom: "50px"             
-                }}
-                >
-                              <div style={{height:'350px', padding: "10px", marginRight: "50px"}}>
-                          <h6 style={{textAlign:"center", fontWeight:"bold"}}>User Pantry Page</h6>
+                              <div className="gtImage">
+                          <h6 className = "imageHeading">User Pantry Page</h6>
                           <Image src="/images/grocery-tracker/gtlist.jpg"
                           alt="screenshot of the pantry page for the grocery tracker project"
-                          width={800}
-                          height={450} />
+                          width={0}
+                          height={0} 
+                          sizes="100vw"
+                          className="gtinnerImage smallerImage"  />
                   </div>
-                </div>
+                  </div>
           </>
         }
       />

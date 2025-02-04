@@ -73,11 +73,6 @@
   #aboutPicContainer{
     margin: auto;
     margin-top: 10vh;
-    width:85vw;
-  }
-
-  #aboutPic{
-    border-radius: 10px;
   }
   
   #aboutText{

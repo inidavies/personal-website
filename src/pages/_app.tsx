@@ -4,6 +4,7 @@ import "../../public/styles/sayhi.css";
 import "../../public/styles/name.css";
 import "../../public/styles/aboutandskills.css";
 import "../../public/styles/projects.css";
+import "../../public/styles/projectdata.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
