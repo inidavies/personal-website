@@ -89,7 +89,7 @@ function Project(props: projectProps) {
           <div className={"rightheading"}>
             <div className={"year"}>
               <a 
-              href={link ? link : "#"}
+              href={link}
               target="_blank"
               rel="noopener noreferrer">
                 {year}
