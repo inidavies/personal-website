@@ -17,9 +17,8 @@ function Project(props: projectProps) {
   const index = props.projectIndex;
   const content = props.projectContent;
   const link = props.projectLink;
-
+  
   function expand(e: React.MouseEvent) {
-    e.preventDefault();
     e.currentTarget.classList.toggle("clicked");
   }
 
@@ -69,7 +68,7 @@ function Project(props: projectProps) {
 
   return (
     <div className="project">
-      <a
+      <div
         className={`projectCard 
             ${checkEven(index) ? "evenproject" : "oddproject"}
             ${checkIsFirst(index) ? "" : "layeredcards"}`
@@ -81,7 +80,7 @@ function Project(props: projectProps) {
           
           <div className={"leftheading"}>
             <div>
-              <h1>{name}</h1>
+            <h1>{name}</h1>
             </div>
             <div className={"skillsused"}>{RenderSkills()}</div>
           </div>
@@ -100,7 +99,7 @@ function Project(props: projectProps) {
           
         </div>
         <div className="projectContent" >{content}</div>
-      </a>
+      </div>
     </div>
   );
 }

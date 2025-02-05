@@ -18,12 +18,14 @@
   display: flex;
 }
 .project a{
+  text-decoration: none;
+  color:black;
+}
+.project .projectCard{
   cursor:pointer;
   height: 13vh;
   overflow: hidden;
-  text-decoration: none;
   transition: all 1s ease-in-out;
-  color:black;
   border-top: 1px solid black;
   border-left: 1px solid black;
   margin-bottom: 0px;
@@ -33,7 +35,7 @@
 #project3{
   border-bottom: 1px solid black;
 }
-.project a:hover{
+.project .projectCard:hover{
       /** i was stumped about why the transition was so abrupt at first 
   and apparently its beacause i set height tyo 100%. Only an actual
   value like 100px or 50vh with work for the smooth transition **/
