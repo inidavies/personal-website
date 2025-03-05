@@ -22,7 +22,7 @@ function ProjectsPage() {
                     <p className="pwPSContent">My goal was to create a responsive, clean, intuitive, and easily navigable website, that clearly showcases my projects and skills.
                     This project is not static, I will continuously iterate on it to improve the design as my skills develop.</p>
                   </div>
-                  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                  <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly'}} >
                     <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="600" src="https://embed.figma.com/design/mEeVQ6cfpGXO0e57ezC59z/Portfolio-Website?node-id=10-9&embed-host=share" ></iframe>
                   </div>
                 </>
@@ -94,9 +94,10 @@ function ProjectsPage() {
               <li>Notifies the user via email before their groceries expire.</li>
               
             </ul>
-            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}
+            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly'}}
                 >
-                  <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="450" src="https://embed.figma.com/design/zLNz6ScSGknxwwKBtfDlTL/Grocery-Tracker?embed-host=share"></iframe>
+                  <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="600" src="https://embed.figma.com/design/zLNz6ScSGknxwwKBtfDlTL/Grocery-Tracker?embed-host=share"></iframe>
+                  
                   </div>
           </>
         }

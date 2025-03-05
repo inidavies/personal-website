@@ -94,7 +94,13 @@ function Project(props: projectProps) {
                 {year}
               </a>
             </div>
-            <div className={"techstack"}>{RenderTechStack()}</div>
+            <a 
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer">
+                <div className={"techstack"}>{RenderTechStack()}</div>
+              </a>
+            
           </div>
           
         </div>
