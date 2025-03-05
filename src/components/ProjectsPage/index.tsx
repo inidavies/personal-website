@@ -23,31 +23,9 @@ function ProjectsPage() {
                     <p className="pwPSContent">My goal was to create a responsive, clean, intuitive, and easily navigable website, that clearly showcases my projects and skills.
                     This project is not static, I will continuously iterate on it to improve the design as my skills develop.</p>
                   </div>
-                  <div
-                  id="pwImages"
-                  className="projectImages"
-                  >
-                        <div className="pwImage">
-                          <h6 className = "imageHeading">Design System</h6>
-                          <Image src="/images/personal-website/design-system.jpg"
-                          alt="screenshot of the design system planning for my personal website"
-                          width={0}
-                          height={0} 
-                          sizes="100vw"
-                          id="pwdsImage"
-                          className="smallerImage"/>
-                        </div>
-                        <div className="pwImage" style={{marginRight: "200px"}}>
-                          <h6 className = "imageHeading">Mid-Fidelity Mockups</h6>
-                          <img src="/images/personal-website/mid-fed.jpg" 
-                          alt="screenshot of mockups of the my personal website" 
-                          width={0}
-                          height={0} 
-                          sizes="100vw"
-                          id="pwmfImage"
-                          className="smallerImage"/>
-                        </div>
-                      </div>   
+                  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="600" src="https://embed.figma.com/design/mEeVQ6cfpGXO0e57ezC59z/Portfolio-Website?node-id=10-9&embed-host=share" ></iframe>
+                  </div>
                 </>
           }
       />
@@ -93,22 +71,6 @@ function ProjectsPage() {
                       <li>Collaborated with the back-end team to integrate the front-end with the back-end using <strong>RESTful APIs</strong>.</li>
                       <li>Conducted user testing and gathered feedback to improve the user experience.</li>
                   </ul>
-                  
-                  <div
-                  id="smImages"
-                  className="projectImages"
-                  >
-                    <div className="smImage">
-                            <h6 className = "imageHeading">Tech Stack</h6>
-                            <Image src="/images/scoutmaster/smtech.jpg"
-                            alt="photo of the tech stack used in the ScoutMaster project, including React Native, Typescript, and CSS"
-                            width={0}
-                          height={0} 
-                          sizes="100vw"
-                          id="smtsImage" 
-                          className="smallerImage"/>
-                    </div>
-                  </div>
                 </>
         }
       />
@@ -133,54 +95,9 @@ function ProjectsPage() {
               <li>Notifies the user via email before their groceries expire.</li>
               
             </ul>
-            <div
-            className="gtImages projectImages"
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}
                 >
-                  <div className="gtImage">
-                          <h6 className = "imageHeading">Project Structure</h6>
-                          <Image src="/images/grocery-tracker/gtsc.jpg"
-                          alt="screenshot of the project structire for the grocery tracker project"
-                          width={0}
-                          height={0} 
-                          sizes="100vw"
-                          className="gtinnerImage smallerImage" />
-                  </div>
-                  <div className="gtImage">
-                          <h6 className = "imageHeading">Log In Page</h6>
-                          <Image src="/images/grocery-tracker/gtlogin.jpg"
-                          alt="screenshot of the login page for the grocery tracker project"
-                          width={0}
-                          height={0} 
-                          sizes="100vw"
-                          className="gtinnerImage smallerImage" />
-                  </div>
-                              <div className="gtImage">
-                          <h6 className = "imageHeading">Sign Up Page</h6>
-                          <Image src="/images/grocery-tracker/gtsignup.jpg"
-                          alt="screenshot of the sign up page for the grocery tracker project"
-                          width={0}
-                          height={0} 
-                          sizes="100vw"
-                          className="gtinnerImage smallerImage"  />
-                  </div>
-                  <div className="gtImage">
-                            <h6 className="imageHeading">Grocery List Page</h6>
-                          <Image src="/images/grocery-tracker/gthome.jpg"
-                          alt="screenshot of the home page for the grocery tracker project"
-                          width={0}
-                          height={0} 
-                          sizes="100vw"
-                          className="gtinnerImage smallerImage"  />
-                  </div>
-                              <div className="gtImage">
-                          <h6 className = "imageHeading">User Pantry Page</h6>
-                          <Image src="/images/grocery-tracker/gtlist.jpg"
-                          alt="screenshot of the pantry page for the grocery tracker project"
-                          width={0}
-                          height={0} 
-                          sizes="100vw"
-                          className="gtinnerImage smallerImage"  />
-                  </div>
+                  <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="450" src="https://embed.figma.com/design/zLNz6ScSGknxwwKBtfDlTL/Grocery-Tracker?embed-host=share"></iframe>
                   </div>
           </>
         }
