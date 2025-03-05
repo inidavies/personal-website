@@ -80,12 +80,7 @@ function Project(props: projectProps) {
           
           <div className={"leftheading"}>
             <div>
-            <a 
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer">
-                <h1>{name}</h1>
-              </a>
+            <h1>{name}</h1>
             </div>
             <div className={"skillsused"}>{RenderSkills()}</div>
           </div>
