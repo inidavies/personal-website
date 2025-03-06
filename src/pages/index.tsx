@@ -13,7 +13,6 @@ export default function Home() {
         <title>Ini Davies</title>
       </Head>
       <Navigation />
-      <NamePage />
       <AboutPage />
       <SkillsPage />
       <ProjectsPage />
