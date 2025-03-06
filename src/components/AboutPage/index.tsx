@@ -7,9 +7,8 @@ function AboutPage() {
       <div id="aboutText">
         <h2>a little about me.</h2>
         <p>
-          In May of 2024, I graduated with a BSc in Computer Science from University of North
-          Texas and currently work as a Software Engineer. I am a full stack developer with a passion for
-          front-end development and creating applications with intuitive, useable, and user-centric designs with the aid of UX principles.
+          I am a full stack developer, with a focus on
+          <span className="fw-bold"> front-end development</span> and <span className="fw-bold">User Experience</span>, striving to create applications with intuitive, useable, and user-centric designs.
           
           Software development allows me to combine creativity with my interest in technology. My dream is to work where I can create.
         </p>

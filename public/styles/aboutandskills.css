@@ -17,7 +17,7 @@
 }
 
 #aboutText{
-  width:40vw;
+  width:20vw;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
