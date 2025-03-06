@@ -8,9 +8,10 @@ import "../../public/styles/projectdata.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {faPaperclip} from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-library.add(fab, faEnvelope);
+library.add(fab, faEnvelope, faPaperclip);
 
 export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps}></Component>;

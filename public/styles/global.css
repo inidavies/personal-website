@@ -15,7 +15,7 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
-  background-color: #FDE8F7 !important;
+  background-color: #FFFFFF !important;
   font-family: 'Satoshi-Regular', sans-serif !important;
 }
 
@@ -43,7 +43,7 @@ h2{
   background-color: rgba(0, 0, 0, 0.986);
 }
 .alternate-page{
-  background-color: #FFFFFF;
+  background-color: #FDE8F7;
 }
 
 .mypage{
