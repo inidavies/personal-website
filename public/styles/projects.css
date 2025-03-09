@@ -22,7 +22,7 @@
 }
 .project .projectCard{
   cursor:pointer;
-  height: 13vh;
+  height: 130px;
   overflow: hidden;
   transition: all 1s ease-in-out;
   border-top: 1px solid black;
