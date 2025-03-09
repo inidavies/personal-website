@@ -111,7 +111,7 @@
   }
 }
 
-@media screen  and (max-width: 412px){
+@media screen  and (max-width: 500px){
   #aboutPicContainer{
     margin: auto;
     margin-top: 0;
