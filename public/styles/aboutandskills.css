@@ -5,8 +5,7 @@
 
 #about{
     justify-content: center;
-    height: auto;
-    padding: 10vh 0;
+    height: 100vh;
     
 }
   
@@ -34,8 +33,7 @@
 }
 
 #skills{
-  height: auto;
-  padding: 10vh 0;
+  height: 100vh;
 }
 
 #skillSummary{

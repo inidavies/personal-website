@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { NamePage, Navigation } from "../components/NamePage";
 import { SkillsPage } from "../components/SkillsPage";
@@ -7,8 +7,25 @@ import { ProjectsPage } from "../components/ProjectsPage";
 import { SayHiPage } from "../components/SayHiPage";
 
 export default function Home() {
+  const pageHeight = 600;
+  const [bgColor, setBgColor] = useState(false);
+
+  useEffect(() => {
+    const ScrollEvent = () => {
+      setBgColor(
+        window.scrollY >= pageHeight && window.scrollY <= pageHeight * 2,
+      );
+    };
+    window.addEventListener("scroll", ScrollEvent);
+    return () => window.removeEventListener("scroll", ScrollEvent);
+  }, []);
+
+  useEffect(() => {
+    console.log(window.scrollY, bgColor);
+  }, [bgColor]);
+
   return (
-    <>
+    <div className={bgColor ? "alternateColor" : "mainColor"}>
       <Head>
         <title>Ini Davies</title>
         <meta name="description" content="Ini Davies Portfolio" />
@@ -41,7 +58,7 @@ export default function Home() {
       <SkillsPage />
       <ProjectsPage />
       <SayHiPage />
-    </>
+    </div>
   );
 }
 export { Home };

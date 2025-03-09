@@ -3,8 +3,9 @@
 @import url('zodiak.css');
 html,
 body {
-  background-color: #FDE8F7 !important;
+  /* background-color: linear-gradient(180deg, #FDE8F7 0%, #FDE8F7 51%, #ffffff 75%); */
   font-family: 'Satoshi-Regular', sans-serif !important;
+  background-color: all 0.5s ease-in-out !important;
 }
 
 h2{
@@ -30,9 +31,9 @@ h2{
   color: #FDE8F7;
   background-color: rgba(0, 0, 0, 0.986);
 }
-.alternate-page{
+/**.alternate-page{
   background-color: #FFFFFF;
-}
+}**/
 
 .mypage{
   width: 100%;
@@ -42,4 +43,12 @@ h2{
   justify-content: center;
   align-items: center;
   padding: 10px 30px;
+}
+.mainColor{
+  background-color: #FDE8F7;
+  transition: all 0.7s ease-in-out;
+}
+.alternateColor{
+  background-color: white;
+  transition: all 0.7s ease-in-out;
 }
