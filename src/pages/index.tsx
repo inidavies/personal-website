@@ -11,74 +11,29 @@ export default function Home() {
     <>
       <Head>
         <title>Ini Davies</title>
+        <meta name="description" content="Ini Davies Portfolio" />
+        <link rel="icon" href="/profile.jpg" />
         <link
           rel="preload"
-          href="../../public/fonts/ClashDisplay/ClashDisplay-Variable.woff2"
+          href="/fonts/Satoshi/Satoshi-Light.woff2"
           as="font"
           type="font/woff2"
-        />
+          crossOrigin="anonymous"
+        ></link>
         <link
           rel="preload"
-          href="../../public/fonts/ClashDisplay/ClashDisplay-Extralight.woff2"
+          href="/fonts/Satoshi/Satoshi-Regular.woff2"
           as="font"
           type="font/woff2"
-        />
+          crossOrigin="anonymous"
+        ></link>
         <link
           rel="preload"
-          href="../../public/fonts/ClashDisplay/ClashDisplay-Light.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="../../public/fonts/Satoshi/Satoshi-Variable.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="../../public/fonts/Satoshi/Satoshi-Light.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="../../public/fonts/Satoshi/Satoshi-Medium.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="../../public/fonts/Satoshi/Satoshi-Regular.woff2"
-          as="font"
-          type="font/woff2"
-        />
-
-        <link
-          rel="preload"
-          href="../../public/fonts/Zodiak/Zodiak-Bold.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="../../public/fonts/Zodiak/Zodiak-Regular.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="../../public/fonts/Zodiak/Zodiak-Light.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="../../public/fonts/Zodiak/Zodiak-Thin.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link rel="stylesheet" href="../../public/styles/global.css" />
+          href="/profile.jpg"
+          as="image"
+          type="image/jpeg"
+          crossOrigin="anonymous"
+        ></link>
       </Head>
       <Navigation />
       <NamePage />

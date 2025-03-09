@@ -3,18 +3,6 @@
 @import url('zodiak.css');
 html,
 body {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
   background-color: #FDE8F7 !important;
   font-family: 'Satoshi-Regular', sans-serif !important;
 }
