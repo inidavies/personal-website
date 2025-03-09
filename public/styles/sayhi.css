@@ -1,7 +1,7 @@
 #sayHi{
   height: auto;
   flex-direction: row;
-  padding: 0 2vh 20vh 2vh;
+  padding: 12vh 2vh 12vh 2vh;
 }
 
 #contactLeft{
@@ -55,6 +55,7 @@
   }
   
   .forminput{
+    background-color: transparent;
     width: 40%;
     border: none;
     border-bottom: 1px solid black;
