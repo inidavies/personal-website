@@ -5,7 +5,8 @@
 
 #about{
     justify-content: center;
-    height: 100vh;
+    height: auto;
+    padding: 10vh 0;
     
 }
   
@@ -33,7 +34,7 @@
 }
 
 #skills{
-  height: 100vh;
+  height: auto;
   padding: 10vh 0;
 }
 
