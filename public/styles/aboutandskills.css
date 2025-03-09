@@ -4,6 +4,8 @@
 
 #about{
     justify-content: center;
+    height: auto;
+    padding: 10vh 0;
 }
   
 #aboutPicContainer{
@@ -27,7 +29,7 @@
 }
 
 #skills{
-  height: 100vh;
+  height: auto;
   padding: 10vh 0;
 }
 
@@ -63,18 +65,19 @@
 .item{
   margin-right: 25px;
 }
+@media screen and (max-width: 1000px){
 
-@media screen and (max-width: 800px){
+}
+@media screen and (max-width: 900px){
   #about{
     display: block;
     height: auto;
+    padding: 0;
   }
-  
   #aboutPicContainer{
     margin: auto;
     margin-top: 10vh;
   }
-  
   #aboutText{
     width: 100%;
     margin: auto;
@@ -84,6 +87,7 @@
   #skills{
     display: block;
     height: auto;
+    padding: 0;
   }
 
   #skillSummary{
