@@ -1,16 +1,20 @@
 .aboutAndSkills{
   width: 100%;
+  height: auto;
 }
 
 #about{
     justify-content: center;
-    height: auto;
-    padding: 10vh 0;
+    height: 100vh;
+    
 }
   
 #aboutPicContainer{
-  height: 100%;
+  height:100%;
   width: 25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #aboutPic{
@@ -19,7 +23,7 @@
 }
 
 #aboutText{
-  width:20vw;
+  width: 30vw;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
@@ -29,7 +33,7 @@
 }
 
 #skills{
-  height: auto;
+  height: 100vh;
   padding: 10vh 0;
 }
 
