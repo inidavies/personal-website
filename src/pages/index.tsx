@@ -28,7 +28,7 @@ export default function Home() {
           crossOrigin="anonymous"
         ></link>
         <link
-          rel="preload"
+          rel="prefetch"
           href="images/profile.jpg"
           as="image"
           type="image/jpeg"
