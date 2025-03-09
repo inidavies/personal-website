@@ -3,7 +3,7 @@ import { Project } from "./Project";
 
 function ProjectsPage() {
   return (
-    <div id="projects" className="mypage">
+    <div id="projectsPage" className="mypage">
       <Project
         projectIndex={1}
         projectName={"PERSONAL WEBSITE"}

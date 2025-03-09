@@ -1,4 +1,3 @@
-import { config } from "dotenv";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -12,7 +11,6 @@ const nextConfig: NextConfig = {
       ...config.resolve.fallback,
       fs: false,
     };
-
     return config;
   },
 };
