@@ -14,68 +14,68 @@ export default function Home() {
         <link
           rel="preload"
           href="../../public/fonts/ClashDisplay-Variable.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
           href="../../public/fonts/ClashDisplay-Extralight.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
           href="../../public/fonts/ClashDisplay-Light.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
           href="../../public/fonts/Satoshi-Variable.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
           href="../../public/fonts/Satoshi-Light.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
           href="../../public/fonts/Satoshi-Medium.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
           href="../../public/fonts/Satoshi-Regular.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
 
         <link
           rel="preload"
           href="../../public/fonts/Zodiak-Bold.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
           href="../../public/fonts/Zodiak-Regular.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
           href="../../public/fonts/Zodiak-Light.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
           href="../../public/fonts/Zodiak-Thin.woff2"
-          as="style"
+          as="font"
           type="font/woff2"
         />
         <link rel="stylesheet" href="../../public/styles/global.css" />
