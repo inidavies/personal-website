@@ -15,10 +15,12 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
-  background-color: #FFFFFF !important;
+  background-color: #FDE8F7 !important;
   font-family: 'Satoshi-Regular', sans-serif !important;
 }
-
+#site{
+  height: auto;
+}
 h2{
   font-family: 'Zodiak-Bold', sans-serif;
 }
@@ -42,17 +44,12 @@ h2{
   color: #FDE8F7;
   background-color: rgba(0, 0, 0, 0.986);
 }
-.alternate-page{
-  background-color: #FDE8F7;
-}
-
 .mypage{
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 30px;
 }
-

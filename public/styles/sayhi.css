@@ -1,7 +1,14 @@
 #sayHi{
   height: auto;
-  flex-direction: row;
-  padding: 0 2vh 20vh 2vh;
+  flex-direction: row;;
+  padding: 12vh 2vh 12vh 2vh;
+}
+.sayHi_inner{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  padding: 0px 10vw;
 }
 
 #contactLeft{
@@ -59,6 +66,7 @@
     border: none;
     border-bottom: 1px solid black;
     margin: 10px 0px 100px 0px;
+    background-color: transparent;
   }
   
   .forminput:focus {

@@ -53,7 +53,7 @@
 }
 
 #aboutText{
-  width:30vw;
+  width:40%;
   display: flex;
   align-items: flex-start;
   flex-flow: column nowrap;
@@ -63,22 +63,22 @@
 }
 
 #skills{
-  height: 70vh;
-  padding: 50vh 0;
+  padding: auto;
 }
 
 #skillSummary{
-  width: 30%;
+  width: 15%;
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
   padding: 20px;
   margin: 25px;
   margin-right: 60px;
+  font-size: 1.2em;
 }
 
 #skillList{
-  width: auto;
+  width: 15%;
   display: flex;
   justify-content: center;
   flex-flow: column wrap; 

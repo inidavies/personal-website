@@ -12,11 +12,13 @@ export default function Home() {
       <Head>
         <title>Ini Davies</title>
       </Head>
-      <Navigation />
-      <AboutPage />
-      <SkillsPage />
-      <ProjectsPage />
-      <SayHiPage />
+        <Navigation />
+        <div id="site">
+          <AboutPage />
+          <SkillsPage />
+          <ProjectsPage />
+          <SayHiPage />
+      </div>
     </>
   );
 }

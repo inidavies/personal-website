@@ -4,8 +4,10 @@ import ContactLinks from "./contactLinks";
 function SayHiPage() {
   return (
     <div id="sayHi" className="mypage alternate-page">
-      <ContactForm />
-      <ContactLinks />
+      <div className="sayHi_inner">
+        <ContactForm />
+        <ContactLinks />
+      </div>
     </div>
   );
 }
