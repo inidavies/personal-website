@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>Ini Davies</title>
         <meta name="description" content="Ini Davies Portfolio" />
-        <link rel="icon" href="/profile.jpg" />
+        <link rel="icon" href="images/profile.jpg" />
         <link
           rel="preload"
           href="/fonts/Satoshi/Satoshi-Light.woff2"
@@ -29,7 +29,7 @@ export default function Home() {
         ></link>
         <link
           rel="preload"
-          href="/profile.jpg"
+          href="images/profile.jpg"
           as="image"
           type="image/jpeg"
           crossOrigin="anonymous"
