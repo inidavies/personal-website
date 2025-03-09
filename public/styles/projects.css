@@ -144,15 +144,15 @@
 
 .year a:hover{
   height: 1.7em;
-  background-color: grey;
-  color: #FFFFFF;
+  background-color: black;
+  color: #FDE8F7;
   border-color: grey;
 }
 
 .year a:active{
   height: 1.7em;
-  background-color: grey;
-  color: #FFFFFF;
+  background-color: black;
+  color: #FDE8F7;
   border-color: grey;
 }
 
@@ -172,14 +172,14 @@
 }
 
 .techstack:hover{
-  background-color: grey;
-  color: #FFFFFF;
+  background-color: black;
+  color: #FDE8F7;
   border-color: grey;
 }
 
 .techstack:active{
-  background-color: grey;
-  color: #FFFFFF;
+  background-color: black;
+  color: #FDE8F7;
   border-color: grey;
 }
 
