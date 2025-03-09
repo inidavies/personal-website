@@ -50,6 +50,19 @@ export default function ContactLinks() {
             />
             <p>email</p>
           </a>
+          <a
+            href="https://drive.google.com/file/d/1HwPS_vyxdU8ynv8rtZHYjiMStCcLfXQR/view?usp=drive_link"
+            id="resume"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contactLink"
+          >
+            <FontAwesomeIcon
+              className="contactIcon"
+              icon={["fas", "paperclip"]}
+            />
+            <p>resume</p>
+          </a>
         </>
       ) : (
         <></>
