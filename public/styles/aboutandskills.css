@@ -28,11 +28,11 @@
 
 #skills{
   height: 70vh;
-  padding: 50vh 0;
+  padding: 10vh 0;
 }
 
 #skillSummary{
-  width: 30%;
+  width: 20%;
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
