@@ -9,8 +9,8 @@
 }
   
 #aboutPicContainer{
-  height: 600px;
-  width: 450px;
+  height: 100%;
+  width: 25em;
 }
 
 #aboutPic{
