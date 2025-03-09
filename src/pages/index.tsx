@@ -13,68 +13,68 @@ export default function Home() {
         <title>Ini Davies</title>
         <link
           rel="preload"
-          href="../../public/fonts/ClashDisplay-Variable.woff2"
+          href="../../public/fonts/ClashDisplay/ClashDisplay-Variable.woff2"
           as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
-          href="../../public/fonts/ClashDisplay-Extralight.woff2"
+          href="../../public/fonts/ClashDisplay/ClashDisplay-Extralight.woff2"
           as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
-          href="../../public/fonts/ClashDisplay-Light.woff2"
+          href="../../public/fonts/ClashDisplay/ClashDisplay-Light.woff2"
           as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
-          href="../../public/fonts/Satoshi-Variable.woff2"
+          href="../../public/fonts/Satoshi/Satoshi-Variable.woff2"
           as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
-          href="../../public/fonts/Satoshi-Light.woff2"
+          href="../../public/fonts/Satoshi/Satoshi-Light.woff2"
           as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
-          href="../../public/fonts/Satoshi-Medium.woff2"
+          href="../../public/fonts/Satoshi/Satoshi-Medium.woff2"
           as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
-          href="../../public/fonts/Satoshi-Regular.woff2"
+          href="../../public/fonts/Satoshi/Satoshi-Regular.woff2"
           as="font"
           type="font/woff2"
         />
 
         <link
           rel="preload"
-          href="../../public/fonts/Zodiak-Bold.woff2"
+          href="../../public/fonts/Zodiak/Zodiak-Bold.woff2"
           as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
-          href="../../public/fonts/Zodiak-Regular.woff2"
+          href="../../public/fonts/Zodiak/Zodiak-Regular.woff2"
           as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
-          href="../../public/fonts/Zodiak-Light.woff2"
+          href="../../public/fonts/Zodiak/Zodiak-Light.woff2"
           as="font"
           type="font/woff2"
         />
         <link
           rel="preload"
-          href="../../public/fonts/Zodiak-Thin.woff2"
+          href="../../public/fonts/Zodiak/Zodiak-Thin.woff2"
           as="font"
           type="font/woff2"
         />
