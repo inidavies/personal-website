@@ -51,7 +51,7 @@ export default function ContactLinks() {
             <p>email</p>
           </a>
           <a
-            href="https://drive.google.com/file/d/1HwPS_vyxdU8ynv8rtZHYjiMStCcLfXQR/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1R576IZNklWqqE3j1WtJonY87oSXDPv7Y/view?usp=drive_link"
             id="resume"
             target="_blank"
             rel="noopener noreferrer"
