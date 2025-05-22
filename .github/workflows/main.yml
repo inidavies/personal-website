@@ -1,12 +1,22 @@
-name: check version
+name: CI Pipeline
+
 on: [push]
+
 jobs:
-  run-shjell-commands:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - name: checkout
-        uses: actions/checkout@v2
-      - name: Multiline Commands
-        run: |
-          node -v
-          npm -v
+        uses: actions/checkout@v4
+
+      - name: setup node.js
+        uses: actions/setup-node@4
+        with:
+          node-version: "18"
+
+      - name: install dependencies
+        run: npm install
+
+      - name: lint code
+        run: npm run lint
