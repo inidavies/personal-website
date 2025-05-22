@@ -1,0 +1,12 @@
+name: check version
+on: [push]
+jobs:
+  run-shjell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Multiline Commands
+        run: |
+          node -v
+          npm -v
