@@ -30,8 +30,6 @@ jobs:
 
       - name: upload build artifact
         uses: actions/upload-artifact@v4
-        run: |
-          echo uploading build artifact
         with:
           name: build-artifact
           path: .next/
