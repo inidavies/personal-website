@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
     outputs:
       artifact-name: build-artifact
 
@@ -32,10 +35,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact
-          path: ./build-artifacts
+          path: ./build-artifacts/
 
   deploy:
-    if: github.event_name == 'workflow_dispatch' # runs only when manually triggered
+    if: github.event_name == 'workflow_dispatch' # runs when manually triggered
     needs: build
     runs-on: ubuntu-latest
 
@@ -44,7 +47,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
-          path: ./build-artifacts
+          path: ./build-artifacts/
 
       - name: setup node.js
         uses: actions/setup-node@v4
