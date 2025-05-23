@@ -63,4 +63,4 @@ jobs:
           --site $NETLIFY_SITE_ID \
           --auth $NETLIFY_AUTH_TOKEN \
           --prod \
-          --dir=next
+          --dir=.next
