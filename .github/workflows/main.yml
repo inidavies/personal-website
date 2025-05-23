@@ -28,17 +28,11 @@ jobs:
       - name: build project
         run: npm run build
 
-      - name: Print working directory
-        run: pwd
-
-      - name: List contents of root
-        run: ls -al
-
       - name: upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact
-          path: out
+          path: .next
 
   deploy:
     if: github.event_name == 'workflow_dispatch' # runs when manually triggered
@@ -50,7 +44,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
-          path: out
+          path: downloaded-artifact
 
       - name: setup node.js
         uses: actions/setup-node@v4
@@ -67,4 +61,8 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
         run: |
-          netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod --dir=out
+          netlify deploy \
+          --site $NETLIFY_SITE_ID \
+          --auth $NETLIFY_AUTH_TOKEN \
+          --prod \
+          --dir=downloaded-artifact
