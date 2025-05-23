@@ -1,17 +1,21 @@
 name: CI Pipeline
 
-on: [push]
+on:
+  push:
+  workflow_dispatch: # enables manual trigger
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      artifact-name: build-artifact
 
     steps:
-      - name: checkout
+      - name: checkout code
         uses: actions/checkout@v4
 
       - name: setup node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@4
         with:
           node-version: "18"
 
@@ -20,3 +24,41 @@ jobs:
 
       - name: lint code
         run: npm run lint
+
+      - name: build project
+        run: npm run build
+
+      - name: upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifact
+          path: ./build
+
+  deploy:
+    if: github.event_name == 'workflow_dispatch' # runs when manually triggered
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact
+          path: ./build
+
+      - name: setup node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: install netlify
+        run: |
+          npm install netlify-cli -g
+
+      - name: deploy to netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+        run: |
+          netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod --dir=./build
