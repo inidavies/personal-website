@@ -35,7 +35,7 @@ jobs:
           path: ./build-artifacts
 
   deploy:
-    if: github.event_name == 'workflow_dispatch' # runs when manually triggered
+    if: github.event_name == 'workflow_dispatch' # runs only when manually triggered
     needs: build
     runs-on: ubuntu-latest
 
