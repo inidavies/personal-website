@@ -32,6 +32,13 @@ jobs:
           name: build-artifact
           path: .next
 
+      - name: List contents of workspace
+        run: |
+          echo "Workspace root:"
+          ls -al
+          echo "Contents of .next:"
+          ls -al .next || echo ".next not found"
+
   deploy:
     if: github.event_name == 'workflow_dispatch' # runs when manually triggered
     needs: build
