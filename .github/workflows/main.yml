@@ -32,13 +32,6 @@ jobs:
           name: build-artifact
           path: .next
 
-      - name: List contents of workspace
-        run: |
-          echo "Workspace root:"
-          ls -al
-          echo "Contents of .next:"
-          ls -al .next || echo ".next not found"
-
   deploy:
     if: github.event_name == 'workflow_dispatch' # runs when manually triggered
     needs: build
@@ -49,7 +42,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
-          path: downloaded-artifact
+          path: .next
 
       - name: setup node.js
         uses: actions/setup-node@v4
@@ -70,4 +63,4 @@ jobs:
           --site $NETLIFY_SITE_ID \
           --auth $NETLIFY_AUTH_TOKEN \
           --prod \
-          --dir=downloaded-artifact
+          --dir=next
