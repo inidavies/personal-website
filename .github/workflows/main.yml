@@ -39,7 +39,6 @@ jobs:
         with:
           name: build-artifact
           path: .next
-        working-directory: ${{ github.workspace }}
 
   deploy:
     if: github.event_name == 'workflow_dispatch' # runs when manually triggered
