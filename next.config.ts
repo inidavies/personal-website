@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
     };
     return config;
   },
+  images:{
+    unoptimized: true, // Disable image optimization for static export
+  },
   output: 'export', // Use 'export' for static export
 };
 
