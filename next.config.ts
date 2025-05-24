@@ -12,11 +12,11 @@ const nextConfig: NextConfig = {
       fs: false,
     };
     return config;
-  },
-  images:{
-    unoptimized: true, // Disable image optimization for static export
-  },
-  output: 'export', // Use 'export' for static export
+  }
+  // images:{
+  //   unoptimized: true, // Disable image optimization for static export
+  // },
+  // output: 'export', // Use 'export' for static export
 };
 
 export default nextConfig;
