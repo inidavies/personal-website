@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
     };
     return config;
   },
+  output: 'export', // Use 'export' for static export
 };
 
 export default nextConfig;
