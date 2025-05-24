@@ -1,3 +1,8 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5018228-8083-4f24-a35d-f6e418e1d3a3/deploy-status)](https://app.netlify.com/projects/inidavies/deploys)
+
+[![CI Pipeline](https://github.com/inidavies/personal-website/actions/workflows/main.yml/badge.svg)](https://github.com/inidavies/personal-website/actions/workflows/main.yml)
+
+
 This is my portfolio website
 
 This a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
