@@ -36,6 +36,9 @@ jobs:
     if: github.event_name == 'workflow_dispatch' # runs when manually triggered
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: netlify production site
+      url: https://inidavies.netlify.app # replace with your Netlify site URL
 
     steps:
       - name: download build artifacts
