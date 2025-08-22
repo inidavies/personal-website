@@ -19,7 +19,7 @@ export default function Navigation() {
             <Nav.Link href="/#skills">skills</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/#projects">projects</Nav.Link>
+            <Nav.Link href="/#project1">projects</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href="/#sayHi">say hi</Nav.Link>

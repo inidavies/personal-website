@@ -38,6 +38,9 @@ export default function Home() {
         href="https://embed.figma.com/design/mEeVQ6cfpGXO0e57ezC59z/Portfolio-Website?node-id=10-9&embed-host=share" 
         as="document" />
         <link rel="preload" 
+        href="https://embed.figma.com/design/3jzujpgKfgTv7z3RE3OTvE/Book-keeper?embed-host=share" 
+        as="document" />
+        <link rel="preload" 
         href="https://embed.figma.com/design/mEeVQ6cfpGXO0e57ezC59z/Portfolio-Website?node-id=10-9&embed-host=sharehttps://embed.figma.com/slides/DcEP6Pnq7LOLutLxwjvz7T/Scoutmaster-Mobile-Screens?node-id=1-856&embed-host=share" 
         as="document" />
       </Head>

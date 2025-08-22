@@ -6,6 +6,69 @@ function ProjectsPage() {
     <div id="projects" className="mypage">
       <Project
         projectIndex={1}
+        projectName={"BOOK KEEPER"}
+        projectSkills={["Web Design", "Fullstack Development", "UI/UX Design", "Database Management" ]}
+        projectYear={"2025"}
+        projectTechStack={["HTML", "CSS", "REACT JS", "TYPESCRIPT", "FIGMA", "NEXT JS", "MONGODB", "JAVA", "SPRINGBOOT"]}
+        projectLink="https://github.com/inidavies"
+        projectContent={          <>
+            <div
+              style={{
+                width: "100%", 
+                textAlign: "center",
+                alignItems: "center",
+                justifyContent: "space-evenly",
+                marginBottom: "50px",
+              }}
+            >
+              <h5>
+                <strong>Wireframes</strong>
+              </h5>
+              <iframe
+                style={{ width: "100%",  border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                width="800"
+                height="600"
+                src="https://embed.figma.com/design/3jzujpgKfgTv7z3RE3OTvE/Book-keeper?embed-host=shar"
+              ></iframe>
+            </div>
+            <h5>
+              <strong>Problem Statement</strong>
+            </h5>
+            <ul>
+              <li>
+                This project was created to keep track of my personal library of books, video and board games, and other media.
+              </li>
+
+              <li>
+                My partner and I wanted a simple, clean, and tailor-made tool to help us catalog our hobbies and collections.
+              </li>
+            </ul>
+            <h5>
+              <strong>Developement Tasks</strong>
+            </h5>
+            <ul>
+              <li>
+                Design possible layouts for the web application using{" "}
+                <strong>Figma</strong>, <strong>Pen</strong>, and{" "}
+                <strong>Paper</strong>.
+              </li>
+              <li>
+                Design and develop the front-end of the web app using{" "}
+                <strong>React Native</strong>, <strong>Typescript</strong>, and{" "}
+                <strong>CSS</strong>.
+              </li>
+              <li>
+                Develop a back-end application using <strong>JAVA</strong> and <strong>SPRINGBOOT</strong> to store, retrieve, and manage media data in
+                <strong>MONGO DB</strong> database.
+              </li>
+              <li>
+                Iterate based on user needs.
+              </li>
+            </ul>
+          </>}
+      />
+      <Project
+        projectIndex={2}
         projectName={"PERSONAL WEBSITE"}
         projectSkills={["Web Design", "Front-end Development", "UI/UX Design"]}
         projectYear={"2024-2025"}
@@ -19,7 +82,7 @@ function ProjectsPage() {
                 textAlign: "center",
                 alignItems: "center",
                 justifyContent: "space-evenly",
-                marginBottom: "100px",
+                marginBottom: "50px",
               }}
             >
               <h5>
@@ -57,7 +120,7 @@ function ProjectsPage() {
       />
 
       <Project
-        projectIndex={2}
+        projectIndex={3}
         projectName={"SCOUTMASTER"}
         projectSkills={[
           "Mobile App Development",
@@ -74,7 +137,7 @@ function ProjectsPage() {
                 alignItems: "center",
                 textAlign: "center",
                 justifyContent: "space-evenly",
-                marginBottom: "100px",
+                marginBottom: "50px",
               }} >
               <h5>
                 <strong>Screenshots of Final Mobile App</strong>
@@ -154,7 +217,7 @@ function ProjectsPage() {
       />
 
       <Project
-        projectIndex={3}
+        projectIndex={4}
         projectName={"GROCERY TRACKER"}
         projectSkills={["Web Design", "Full-Stack Development", "UI/UX Design"]}
         projectYear={"2023"}
