@@ -12,7 +12,10 @@ import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 library.add(fab, faEnvelope, faPaperclip);
+import { preload } from 'react-dom';
 
 export default function App({ Component, pageProps }: AppProps) {
+  // preload("https://embed.figma.com/design/mEeVQ6cfpGXO0e57ezC59z/Portfolio-Website?node-id=10-9&embed-host=share", {as: "document"});
+  // preload("https://embed.figma.com/slides/DcEP6Pnq7LOLutLxwjvz7T/Scoutmaster-Mobile-Screens?node-id=1-856&embed-host=share", {as: "document"});
   return <Component {...pageProps}></Component>;
 }

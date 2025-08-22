@@ -5,6 +5,7 @@ html,
 body {
   background-color: #FDE8F7 !important;
   font-family: 'Satoshi-Regular', sans-serif !important;
+  scroll-behavior: smooth;
 }
 
 h2{

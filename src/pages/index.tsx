@@ -34,6 +34,12 @@ export default function Home() {
           type="image/jpeg"
           crossOrigin="anonymous"
         ></link>
+        <link rel="preload" 
+        href="https://embed.figma.com/design/mEeVQ6cfpGXO0e57ezC59z/Portfolio-Website?node-id=10-9&embed-host=share" 
+        as="document" />
+        <link rel="preload" 
+        href="https://embed.figma.com/design/mEeVQ6cfpGXO0e57ezC59z/Portfolio-Website?node-id=10-9&embed-host=sharehttps://embed.figma.com/slides/DcEP6Pnq7LOLutLxwjvz7T/Scoutmaster-Mobile-Screens?node-id=1-856&embed-host=share" 
+        as="document" />
       </Head>
       <Navigation />
       <NamePage />

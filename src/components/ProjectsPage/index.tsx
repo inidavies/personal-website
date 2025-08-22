@@ -13,6 +13,25 @@ function ProjectsPage() {
         projectLink="https://github.com/inidavies/personal-website"
         projectContent={
           <>
+            <div
+              style={{
+                width: "100%", 
+                textAlign: "center",
+                alignItems: "center",
+                justifyContent: "space-evenly",
+                marginBottom: "100px",
+              }}
+            >
+              <h5>
+                <strong>Wireframes</strong>
+              </h5>
+              <iframe
+                style={{ width: "100%",  border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                width="800"
+                height="600"
+                src="https://embed.figma.com/design/mEeVQ6cfpGXO0e57ezC59z/Portfolio-Website?node-id=10-9&embed-host=share"
+              ></iframe>
+            </div>
             <h5>
               <strong>Problem Statement</strong>
             </h5>
@@ -33,21 +52,6 @@ function ProjectsPage() {
                 on it to improve the design as my skills develop.
               </p>
             </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-evenly",
-              }}
-            >
-              <iframe
-                style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-                width="800"
-                height="600"
-                src="https://embed.figma.com/design/mEeVQ6cfpGXO0e57ezC59z/Portfolio-Website?node-id=10-9&embed-host=share"
-              ></iframe>
-            </div>
           </>
         }
       />
@@ -65,6 +69,35 @@ function ProjectsPage() {
         projectLink="https://scoutmasterapp.com/"
         projectContent={
           <>
+          <div               
+                style={{
+                alignItems: "center",
+                textAlign: "center",
+                justifyContent: "space-evenly",
+                marginBottom: "100px",
+              }} >
+              <h5>
+                <strong>Screenshots of Final Mobile App</strong>
+              </h5>
+              <iframe style={{ width: "100%", border: "1px solid rgba(0, 0, 0, 0.1)"}} 
+              width="800" height="800"
+               src="https://embed.figma.com/slides/DcEP6Pnq7LOLutLxwjvz7T/Scoutmaster-Mobile-Screens?node-id=1-856&embed-host=share"
+                allowfullscreen></iframe>
+            </div>
+            <div style={{
+                alignItems: "center",
+                textAlign: "center",
+                justifyContent: "space-evenly",
+                marginBottom: "100px",
+              }}>
+              <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/_qUI48GsZGY?si=7HaFIgzfE-RsnDWO" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               referrerpolicy="strict-origin-when-cross-origin"
+               allowfullscreen></iframe>
+              
+            </div>
             <h5>
               <strong>Problem Statement</strong>
             </h5>
@@ -91,11 +124,7 @@ function ProjectsPage() {
             </p>
             <p>
               Note: ScoutMaster has been non-operational since 2022 and we
-              developed a new version of the mobile app from scratch. The
-              website linked displays the app&apos;s older UI but The new
-              version is not live and I&apos;m unable share the assets here for
-              copyright reasons, but I&apos;m happy to discuss technical
-              details.
+              developed a new version of the mobile app from scratch. 
             </p>
             <h5>
               <strong>My Role</strong>
@@ -133,6 +162,25 @@ function ProjectsPage() {
         projectLink="https://github.com/EthanWillinger/GroceryTracker"
         projectContent={
           <>
+            <div
+              style={{
+                textAlign: "center",
+                width: "100%",
+                alignItems: "center",
+                justifyContent: "space-evenly",
+                marginBottom: "100px",
+              }}
+            >
+              <h5>
+                <strong>Wireframes</strong>
+              </h5>
+              <iframe
+                style={{ width:"100%", border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                width="800"
+                height="600"
+                src="https://embed.figma.com/design/zLNz6ScSGknxwwKBtfDlTL/Grocery-Tracker?embed-host=share"
+              ></iframe>
+            </div>
             <h5>
               <strong>Problem Statement</strong>
             </h5>
@@ -151,21 +199,6 @@ function ProjectsPage() {
                 Notifies the user via email before their groceries expire.
               </li>
             </ul>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-evenly",
-              }}
-            >
-              <iframe
-                style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-                width="800"
-                height="600"
-                src="https://embed.figma.com/design/zLNz6ScSGknxwwKBtfDlTL/Grocery-Tracker?embed-host=share"
-              ></iframe>
-            </div>
           </>
         }
       />
