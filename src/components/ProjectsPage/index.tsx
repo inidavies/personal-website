@@ -82,7 +82,7 @@ function ProjectsPage() {
               <iframe style={{ width: "100%", border: "1px solid rgba(0, 0, 0, 0.1)"}} 
               width="800" height="800"
                src="https://embed.figma.com/slides/DcEP6Pnq7LOLutLxwjvz7T/Scoutmaster-Mobile-Screens?node-id=1-856&embed-host=share"
-                allowfullscreen></iframe>
+              ></iframe>
             </div>
             <div style={{
                 alignItems: "center",
@@ -95,7 +95,7 @@ function ProjectsPage() {
               title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                referrerpolicy="strict-origin-when-cross-origin"
-               allowfullscreen></iframe>
+              ></iframe>
               
             </div>
             <h5>
