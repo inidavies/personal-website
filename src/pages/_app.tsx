@@ -12,7 +12,7 @@ import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 library.add(fab, faEnvelope, faPaperclip);
-import { preload } from 'react-dom';
+// import { preload } from 'react-dom';
 
 export default function App({ Component, pageProps }: AppProps) {
   // preload("https://embed.figma.com/design/mEeVQ6cfpGXO0e57ezC59z/Portfolio-Website?node-id=10-9&embed-host=share", {as: "document"});
